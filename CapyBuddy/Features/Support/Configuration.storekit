@@ -1,0 +1,64 @@
+{
+  "identifier" : "7EFD508B-479C-4C4F-B398-391B693428FC",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "76BF6B08-0DEA-4C1A-ABE6-45EEEBCADB2C",
+      "localizations" : [
+        {
+          "description" : "Buy the developer a small coffee.",
+          "displayName" : "Espresso",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.atlai.capybuddy.coffee.small",
+      "referenceName" : "Coffee Small",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "00B0D232-FE12-405C-9DF2-7506DE4A1165",
+      "localizations" : [
+        {
+          "description" : "Buy the developer a latte.",
+          "displayName" : "Latte",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.atlai.capybuddy.coffee.medium",
+      "referenceName" : "Coffee Medium",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "3D31C7F4-D1C2-4253-BAD7-6A7521B05F6C",
+      "localizations" : [
+        {
+          "description" : "Buy the developer a latte and a waffle.",
+          "displayName" : "Latte + Waffle",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.atlai.capybuddy.coffee.large",
+      "referenceName" : "Coffee Large",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : []
+  },
+  "subscriptionGroups" : [],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

@@ -1,0 +1,1253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0000000000000000000300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000200 /* AppDelegate.swift */; };
+		3D0000000000000000000301 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000201 /* Feature.swift */; };
+		3D0000000000000000000302 /* FeatureRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000202 /* FeatureRegistry.swift */; };
+		3D0000000000000000000303 /* PermissionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000203 /* PermissionChecker.swift */; };
+		3D0000000000000000000304 /* KeyCombo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000204 /* KeyCombo.swift */; };
+		3D0000000000000000000305 /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000205 /* MenuBarManager.swift */; };
+		3D0000000000000000000306 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000206 /* SettingsWindowController.swift */; };
+		3D0000000000000000000307 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000207 /* SettingsView.swift */; };
+		3D000000000000000000030D /* ScreenshotFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000020D /* ScreenshotFeature.swift */; };
+		3D000000000000000000030E /* ScreenshotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000020E /* ScreenshotManager.swift */; };
+		3D000000000000000000030F /* SelectionOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000020F /* SelectionOverlayWindow.swift */; };
+		3D0000000000000000000310 /* PinnedImageWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000210 /* PinnedImageWindow.swift */; };
+		3D0000000000000000000311 /* ScreenshotSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000211 /* ScreenshotSettingsView.swift */; };
+		3D0000000000000000000315 /* HotkeyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000215 /* HotkeyConfig.swift */; };
+		3D0000000000000000000316 /* HotkeyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000216 /* HotkeyTap.swift */; };
+		3D0000000000000000000317 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000217 /* Annotation.swift */; };
+		3D0000000000000000000318 /* AnnotationCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000218 /* AnnotationCanvasView.swift */; };
+		3D0000000000000000000319 /* AnnotationToolbarPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000219 /* AnnotationToolbarPanel.swift */; };
+		3D000000000000000000031A /* MagnifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021A /* MagnifierView.swift */; };
+		3D000000000000000000031B /* ToolHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021B /* ToolHandler.swift */; };
+		3D000000000000000000031C /* RectangleTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021C /* RectangleTool.swift */; };
+		3D000000000000000000031D /* ArrowTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021D /* ArrowTool.swift */; };
+		3D000000000000000000031E /* PenTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021E /* PenTool.swift */; };
+		3D000000000000000000031F /* HighlightTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021F /* HighlightTool.swift */; };
+		3D0000000000000000000320 /* TextTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000220 /* TextTool.swift */; };
+		3D0000000000000000000321 /* MosaicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000221 /* MosaicTool.swift */; };
+		3D0000000000000000000322 /* AnnotationPrefsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000222 /* AnnotationPrefsStore.swift */; };
+		3D0000000000000000000323 /* EllipseTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000223 /* EllipseTool.swift */; };
+		3D0000000000000000000324 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000224 /* Selection.swift */; };
+		3D0000000000000000000325 /* AnnotationConfigPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000225 /* AnnotationConfigPanel.swift */; };
+		3D0000000000000000000326 /* PowerAssertionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000226 /* PowerAssertionHolder.swift */; };
+		3D0000000000000000000327 /* CaffeineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000227 /* CaffeineController.swift */; };
+		3D0000000000000000000328 /* CaffeineFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000228 /* CaffeineFeature.swift */; };
+		3D0000000000000000000329 /* CaffeineSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000229 /* CaffeineSettingsView.swift */; };
+		3D0000000000000000000330 /* ClipboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000230 /* ClipboardItem.swift */; };
+		3D0000000000000000000331 /* ClipboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000231 /* ClipboardStore.swift */; };
+		3D0000000000000000000332 /* ClipboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000232 /* ClipboardMonitor.swift */; };
+		3D0000000000000000000333 /* ClipboardHistoryWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000233 /* ClipboardHistoryWindow.swift */; };
+		3D0000000000000000000334 /* ClipboardHotkeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000234 /* ClipboardHotkeyStore.swift */; };
+		3D0000000000000000000335 /* ClipboardFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000235 /* ClipboardFeature.swift */; };
+		3D0000000000000000000336 /* ClipboardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000236 /* ClipboardSettingsView.swift */; };
+		3D0000000000000000000340 /* HostStatsSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000240 /* HostStatsSampler.swift */; };
+		3D0000000000000000000341 /* SystemMonitorFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000241 /* SystemMonitorFeature.swift */; };
+		3D0000000000000000000342 /* SystemMonitorSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000242 /* SystemMonitorSettingsView.swift */; };
+		3D0000000000000000000343 /* ConversionFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000243 /* ConversionFormat.swift */; };
+		3D0000000000000000000344 /* ConversionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000244 /* ConversionEngine.swift */; };
+		3D0000000000000000000345 /* ConversionJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000245 /* ConversionJob.swift */; };
+		3D0000000000000000000346 /* ConversionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000246 /* ConversionQueue.swift */; };
+		3D0000000000000000000347 /* PictureConvertWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000247 /* PictureConvertWindow.swift */; };
+		3D0000000000000000000348 /* PictureConvertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000248 /* PictureConvertView.swift */; };
+		3D0000000000000000000349 /* PictureConvertFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000249 /* PictureConvertFeature.swift */; };
+		3D0000000000000000000350 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024A /* OCRService.swift */; };
+		3D0000000000000000000351 /* ExtractResultPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024B /* ExtractResultPanel.swift */; };
+		3D0000000000000000000352 /* TranslatedImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024C /* TranslatedImageRenderer.swift */; };
+		3D0000000000000000000353 /* TranslationPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024D /* TranslationPrefs.swift */; };
+		3D0000000000000000000354 /* BarcodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024E /* BarcodeService.swift */; };
+		3D0000000000000000000355 /* BarcodeOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024F /* BarcodeOverlayController.swift */; };
+		3D0000000000000000000360 /* PictureEditOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000260 /* PictureEditOps.swift */; };
+		3D0000000000000000000361 /* BackgroundRemoval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000261 /* BackgroundRemoval.swift */; };
+		3D0000000000000000000362 /* PictureEditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000262 /* PictureEditModel.swift */; };
+		3D0000000000000000000363 /* PictureEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000263 /* PictureEditView.swift */; };
+		3D0000000000000000000364 /* PictureEditWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000264 /* PictureEditWindow.swift */; };
+		3D0000000000000000000365 /* PictureEditFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000265 /* PictureEditFeature.swift */; };
+		3D0000000000000000000366 /* ZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000266 /* ZoomableImageView.swift */; };
+		3D0000000000000000000367 /* WindowHitTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000267 /* WindowHitTester.swift */; };
+		3D0000000000000000000368 /* UIElementHitTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000268 /* UIElementHitTester.swift */; };
+		3D0000000000000000000370 /* CoffeePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000270 /* CoffeePurchaseManager.swift */; };
+		3D0000000000000000000371 /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000271 /* SupportView.swift */; };
+		3D0000000000000000000380 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000280 /* FeedbackView.swift */; };
+		3D0000000000000000000390 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000290 /* QRCodeGenerator.swift */; };
+		3D0000000000000000000391 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000291 /* QRCodeView.swift */; };
+		3D0000000000000000000392 /* QRCodeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000292 /* QRCodeWindow.swift */; };
+		3D0000000000000000000393 /* QRCodeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000293 /* QRCodeFeature.swift */; };
+		3D0000000000000000000399 /* UpdaterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000299 /* UpdaterController.swift */; };
+		3D000000000000000000039A /* AdaptiveColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000029A /* AdaptiveColor.swift */; };
+		3D000000000000000000039B /* OutputDirectoryResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000029B /* OutputDirectoryResolver.swift */; };
+		3D000000000000000000039C /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000029C /* AppearanceManager.swift */; };
+		3D00000000000000000003A0 /* ArchiveFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B0 /* ArchiveFormat.swift */; };
+		3D00000000000000000003A1 /* ArchiveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B1 /* ArchiveEngine.swift */; };
+		3D00000000000000000003A2 /* ArchiveJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B2 /* ArchiveJob.swift */; };
+		3D00000000000000000003A3 /* ArchiveQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B3 /* ArchiveQueue.swift */; };
+		3D00000000000000000003A4 /* ArchiveFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B4 /* ArchiveFeature.swift */; };
+		3D00000000000000000003A5 /* ArchiveWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B5 /* ArchiveWindow.swift */; };
+		3D00000000000000000003A6 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B6 /* ArchiveView.swift */; };
+		3D0000000000000000000400 /* SanityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000300 /* SanityTests.swift */; };
+		3D0000000000000000000401 /* MenuBarManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000301 /* MenuBarManagerTests.swift */; };
+		3D0000000000000000000402 /* CaffeineControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000302 /* CaffeineControllerTests.swift */; };
+		3D0000000000000000000403 /* CaffeineFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000303 /* CaffeineFeatureTests.swift */; };
+		3D0000000000000000000404 /* MockPowerAssertionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000304 /* MockPowerAssertionHolder.swift */; };
+		3D0000000000000000000405 /* ClipboardItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000305 /* ClipboardItemTests.swift */; };
+		3D0000000000000000000406 /* ClipboardStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000306 /* ClipboardStoreTests.swift */; };
+		3D0000000000000000000407 /* ClipboardMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000307 /* ClipboardMonitorTests.swift */; };
+		3D0000000000000000000408 /* ClipboardFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000308 /* ClipboardFeatureTests.swift */; };
+		3D0000000000000000000409 /* HostStatsSamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000309 /* HostStatsSamplerTests.swift */; };
+		3D000000000000000000040A /* ConversionFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000030A /* ConversionFormatTests.swift */; };
+		3D000000000000000000040B /* ConversionEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000030B /* ConversionEngineTests.swift */; };
+		3D000000000000000000040C /* ConversionQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000030C /* ConversionQueueTests.swift */; };
+		54ED0E842FAE327B00B57825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000200 /* AppDelegate.swift */; };
+		54ED0E852FAE327B00B57825 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000201 /* Feature.swift */; };
+		54ED0E862FAE327B00B57825 /* FeatureRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000202 /* FeatureRegistry.swift */; };
+		54ED0E872FAE327B00B57825 /* PermissionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000203 /* PermissionChecker.swift */; };
+		54ED0E882FAE327B00B57825 /* KeyCombo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000204 /* KeyCombo.swift */; };
+		54ED0E892FAE327B00B57825 /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000205 /* MenuBarManager.swift */; };
+		54ED0E8A2FAE327B00B57825 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000206 /* SettingsWindowController.swift */; };
+		54ED0E8B2FAE327B00B57825 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000207 /* SettingsView.swift */; };
+		54ED0E8C2FAE327B00B57825 /* SpaceShortcutFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000208 /* SpaceShortcutFeature.swift */; };
+		54ED0E8D2FAE327B00B57825 /* EventTapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000209 /* EventTapManager.swift */; };
+		54ED0E8E2FAE327B00B57825 /* BindingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000020A /* BindingStore.swift */; };
+		54ED0E8F2FAE327B00B57825 /* AppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000020B /* AppLauncher.swift */; };
+		54ED0E902FAE327B00B57825 /* SpaceShortcutSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000020C /* SpaceShortcutSettingsView.swift */; };
+		54ED0E912FAE327B00B57825 /* ScreenshotFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000020D /* ScreenshotFeature.swift */; };
+		54ED0E922FAE327B00B57825 /* ScreenshotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000020E /* ScreenshotManager.swift */; };
+		54ED0E932FAE327B00B57825 /* SelectionOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000020F /* SelectionOverlayWindow.swift */; };
+		54ED0E942FAE327B00B57825 /* PinnedImageWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000210 /* PinnedImageWindow.swift */; };
+		54ED0E952FAE327B00B57825 /* ScreenshotSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000211 /* ScreenshotSettingsView.swift */; };
+		54ED0E962FAE327B00B57825 /* SpaceShortcutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000212 /* SpaceShortcutState.swift */; };
+		54ED0E972FAE327B00B57825 /* ChordHUDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000213 /* ChordHUDController.swift */; };
+		54ED0E972FAE327B00B57826 /* SpaceShortcutStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000214 /* SpaceShortcutStats.swift */; };
+		54ED0E982FAE327B00B57825 /* HotkeyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000215 /* HotkeyConfig.swift */; };
+		54ED0E992FAE327B00B57825 /* HotkeyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000216 /* HotkeyTap.swift */; };
+		54ED0E9A2FAE327B00B57825 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000217 /* Annotation.swift */; };
+		54ED0E9B2FAE327B00B57825 /* AnnotationCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000218 /* AnnotationCanvasView.swift */; };
+		54ED0E9C2FAE327B00B57825 /* AnnotationToolbarPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000219 /* AnnotationToolbarPanel.swift */; };
+		54ED0E9D2FAE327B00B57825 /* MagnifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021A /* MagnifierView.swift */; };
+		54ED0E9E2FAE327B00B57825 /* ToolHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021B /* ToolHandler.swift */; };
+		54ED0E9F2FAE327B00B57825 /* RectangleTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021C /* RectangleTool.swift */; };
+		54ED0EA02FAE327B00B57825 /* ArrowTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021D /* ArrowTool.swift */; };
+		54ED0EA12FAE327B00B57825 /* PenTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021E /* PenTool.swift */; };
+		54ED0EA22FAE327B00B57825 /* HighlightTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000021F /* HighlightTool.swift */; };
+		54ED0EA32FAE327B00B57825 /* TextTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000220 /* TextTool.swift */; };
+		54ED0EA42FAE327B00B57825 /* MosaicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000221 /* MosaicTool.swift */; };
+		54ED0EA52FAE327B00B57825 /* AnnotationPrefsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000222 /* AnnotationPrefsStore.swift */; };
+		54ED0EA62FAE327B00B57825 /* EllipseTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000223 /* EllipseTool.swift */; };
+		54ED0EA72FAE327B00B57825 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000224 /* Selection.swift */; };
+		54ED0EA82FAE327B00B57825 /* AnnotationConfigPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000225 /* AnnotationConfigPanel.swift */; };
+		54ED0EA92FAE327B00B57825 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024A /* OCRService.swift */; };
+		54ED0EAA2FAE327B00B57825 /* ExtractResultPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024B /* ExtractResultPanel.swift */; };
+		54ED0EAB2FAE327B00B57825 /* TranslatedImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024C /* TranslatedImageRenderer.swift */; };
+		54ED0EAC2FAE327B00B57825 /* TranslationPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024D /* TranslationPrefs.swift */; };
+		54ED0EAD2FAE327B00B57825 /* BarcodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024E /* BarcodeService.swift */; };
+		54ED0EAE2FAE327B00B57825 /* BarcodeOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000024F /* BarcodeOverlayController.swift */; };
+		54ED0EAF2FAE327B00B57825 /* PowerAssertionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000226 /* PowerAssertionHolder.swift */; };
+		54ED0EB02FAE327B00B57825 /* CaffeineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000227 /* CaffeineController.swift */; };
+		54ED0EB12FAE327B00B57825 /* CaffeineFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000228 /* CaffeineFeature.swift */; };
+		54ED0EB22FAE327B00B57825 /* CaffeineSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000229 /* CaffeineSettingsView.swift */; };
+		54ED0EB32FAE327B00B57825 /* ClipboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000230 /* ClipboardItem.swift */; };
+		54ED0EB42FAE327B00B57825 /* ClipboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000231 /* ClipboardStore.swift */; };
+		54ED0EB52FAE327B00B57825 /* ClipboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000232 /* ClipboardMonitor.swift */; };
+		54ED0EB62FAE327B00B57825 /* ClipboardHistoryWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000233 /* ClipboardHistoryWindow.swift */; };
+		54ED0EB72FAE327B00B57825 /* ClipboardHotkeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000234 /* ClipboardHotkeyStore.swift */; };
+		54ED0EB82FAE327B00B57825 /* ClipboardFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000235 /* ClipboardFeature.swift */; };
+		54ED0EB92FAE327B00B57825 /* ClipboardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000236 /* ClipboardSettingsView.swift */; };
+		54ED0EBA2FAE327B00B57825 /* HostStatsSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000240 /* HostStatsSampler.swift */; };
+		54ED0EBB2FAE327B00B57825 /* SystemMonitorFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000241 /* SystemMonitorFeature.swift */; };
+		54ED0EBC2FAE327B00B57825 /* SystemMonitorSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000242 /* SystemMonitorSettingsView.swift */; };
+		54ED0EBD2FAE327B00B57825 /* ConversionFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000243 /* ConversionFormat.swift */; };
+		54ED0EBE2FAE327B00B57825 /* ConversionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000244 /* ConversionEngine.swift */; };
+		54ED0EBF2FAE327B00B57825 /* ConversionJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000245 /* ConversionJob.swift */; };
+		54ED0EC02FAE327B00B57825 /* ConversionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000246 /* ConversionQueue.swift */; };
+		54ED0EC12FAE327B00B57825 /* PictureConvertWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000247 /* PictureConvertWindow.swift */; };
+		54ED0EC22FAE327B00B57825 /* PictureConvertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000248 /* PictureConvertView.swift */; };
+		54ED0EC32FAE327B00B57825 /* PictureConvertFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000249 /* PictureConvertFeature.swift */; };
+		54ED0EC42FAE327B00B57825 /* PictureEditOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000260 /* PictureEditOps.swift */; };
+		54ED0EC52FAE327B00B57825 /* BackgroundRemoval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000261 /* BackgroundRemoval.swift */; };
+		54ED0EC62FAE327B00B57825 /* PictureEditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000262 /* PictureEditModel.swift */; };
+		54ED0EC72FAE327B00B57825 /* PictureEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000263 /* PictureEditView.swift */; };
+		54ED0EC82FAE327B00B57825 /* PictureEditWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000264 /* PictureEditWindow.swift */; };
+		54ED0EC92FAE327B00B57825 /* PictureEditFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000265 /* PictureEditFeature.swift */; };
+		54ED0ECA2FAE327B00B57825 /* ZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000266 /* ZoomableImageView.swift */; };
+		54ED0ECB2FAE327B00B57825 /* WindowHitTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000267 /* WindowHitTester.swift */; };
+		54ED0ECC2FAE327B00B57825 /* UIElementHitTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000268 /* UIElementHitTester.swift */; };
+		54ED0ECD2FAE327B00B57825 /* CoffeePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000270 /* CoffeePurchaseManager.swift */; };
+		54ED0ECE2FAE327B00B57825 /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000271 /* SupportView.swift */; };
+		54ED0ECF2FAE327B00B57825 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000280 /* FeedbackView.swift */; };
+		54ED0ED02FAE327B00B57825 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000290 /* QRCodeGenerator.swift */; };
+		54ED0ED12FAE327B00B57825 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000291 /* QRCodeView.swift */; };
+		54ED0ED22FAE327B00B57825 /* QRCodeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000292 /* QRCodeWindow.swift */; };
+		54ED0ED32FAE327B00B57825 /* QRCodeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000293 /* QRCodeFeature.swift */; };
+		54ED0ED62FAE327B00B57825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0000000000000000000402 /* Assets.xcassets */; };
+		54ED0ED72FAE327B00B57825 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4E0000000000000000000403 /* Localizable.xcstrings */; };
+		54ED0EE12FB3355F00B57825 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 54ED0EE02FB3355F00B57825 /* Sparkle */; };
+		54ED0EFF2FAE327B00B57825 /* UpdaterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0000000000000000000299 /* UpdaterController.swift */; };
+		54ED0F002FAE327B00B57825 /* RecordingPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002A0 /* RecordingPrefs.swift */; };
+		54ED0F012FAE327B00B57825 /* RecordingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002A1 /* RecordingMode.swift */; };
+		54ED0F022FAE327B00B57825 /* RecordingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002A2 /* RecordingState.swift */; };
+		54ED0F032FAE327B00B57825 /* RecordingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002A3 /* RecordingEngine.swift */; };
+		54ED0F042FAE327B00B57825 /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002A4 /* RecordingManager.swift */; };
+		54ED0F052FAE327B00B57825 /* RecordingTargetPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002A5 /* RecordingTargetPicker.swift */; };
+		54ED0F062FAE327B00B57825 /* RecordingToolbarPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002A6 /* RecordingToolbarPanel.swift */; };
+		54ED0F072FAE327B00B57825 /* RecordingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002A7 /* RecordingFeature.swift */; };
+		54ED0F082FAE327B00B57825 /* RecordingSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002A8 /* RecordingSettingsView.swift */; };
+		54ED0F092FAE327B00B57825 /* ArchiveFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B0 /* ArchiveFormat.swift */; };
+		54ED0F0A2FAE327B00B57825 /* ArchiveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B1 /* ArchiveEngine.swift */; };
+		54ED0F0B2FAE327B00B57825 /* ArchiveJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B2 /* ArchiveJob.swift */; };
+		54ED0F0C2FAE327B00B57825 /* ArchiveQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B3 /* ArchiveQueue.swift */; };
+		54ED0F0D2FAE327B00B57825 /* ArchiveFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B4 /* ArchiveFeature.swift */; };
+		54ED0F0E2FAE327B00B57825 /* ArchiveWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B5 /* ArchiveWindow.swift */; };
+		54ED0F0F2FAE327B00B57825 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00000000000000000002B6 /* ArchiveView.swift */; };
+		54ED0F102FAE327B00B57825 /* AdaptiveColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000029A /* AdaptiveColor.swift */; };
+		54ED0F112FAE327B00B57825 /* OutputDirectoryResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000029B /* OutputDirectoryResolver.swift */; };
+		54ED0F122FAE327B00B57825 /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C000000000000000000029C /* AppearanceManager.swift */; };
+		5F0000000000000000000500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0000000000000000000402 /* Assets.xcassets */; };
+		5F0000000000000000000501 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4E0000000000000000000403 /* Localizable.xcstrings */; };
+		7A0000000000000000000011 /* VideoEditorFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000001 /* VideoEditorFeature.swift */; };
+		7A0000000000000000000012 /* VideoEditorPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000002 /* VideoEditorPrefs.swift */; };
+		7A0000000000000000000013 /* VideoEditorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000003 /* VideoEditorModel.swift */; };
+		7A0000000000000000000014 /* VideoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000004 /* VideoEditorView.swift */; };
+		7A0000000000000000000015 /* VideoEditorSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000005 /* VideoEditorSettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A0000000000000000000017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A0000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54ED0E822FAE327B00B57825;
+			remoteInfo = CapyBuddy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A0000000000000000000004 /* CapyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0000000000000000000020 /* CapyBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapyBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0000000000000000000200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C0000000000000000000201 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		2C0000000000000000000202 /* FeatureRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureRegistry.swift; sourceTree = "<group>"; };
+		2C0000000000000000000203 /* PermissionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionChecker.swift; sourceTree = "<group>"; };
+		2C0000000000000000000204 /* KeyCombo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCombo.swift; sourceTree = "<group>"; };
+		2C0000000000000000000205 /* MenuBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarManager.swift; sourceTree = "<group>"; };
+		2C0000000000000000000206 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		2C0000000000000000000207 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000208 /* SpaceShortcutFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShortcutFeature.swift; sourceTree = "<group>"; };
+		2C0000000000000000000209 /* EventTapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTapManager.swift; sourceTree = "<group>"; };
+		2C000000000000000000020A /* BindingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingStore.swift; sourceTree = "<group>"; };
+		2C000000000000000000020B /* AppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLauncher.swift; sourceTree = "<group>"; };
+		2C000000000000000000020C /* SpaceShortcutSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShortcutSettingsView.swift; sourceTree = "<group>"; };
+		2C000000000000000000020D /* ScreenshotFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotFeature.swift; sourceTree = "<group>"; };
+		2C000000000000000000020E /* ScreenshotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotManager.swift; sourceTree = "<group>"; };
+		2C000000000000000000020F /* SelectionOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionOverlayWindow.swift; sourceTree = "<group>"; };
+		2C0000000000000000000210 /* PinnedImageWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedImageWindow.swift; sourceTree = "<group>"; };
+		2C0000000000000000000211 /* ScreenshotSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotSettingsView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000212 /* SpaceShortcutState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShortcutState.swift; sourceTree = "<group>"; };
+		2C0000000000000000000213 /* ChordHUDController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordHUDController.swift; sourceTree = "<group>"; };
+		2C0000000000000000000214 /* SpaceShortcutStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShortcutStats.swift; sourceTree = "<group>"; };
+		2C0000000000000000000215 /* HotkeyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyConfig.swift; sourceTree = "<group>"; };
+		2C0000000000000000000216 /* HotkeyTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyTap.swift; sourceTree = "<group>"; };
+		2C0000000000000000000217 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		2C0000000000000000000218 /* AnnotationCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationCanvasView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000219 /* AnnotationToolbarPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationToolbarPanel.swift; sourceTree = "<group>"; };
+		2C000000000000000000021A /* MagnifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifierView.swift; sourceTree = "<group>"; };
+		2C000000000000000000021B /* ToolHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolHandler.swift; sourceTree = "<group>"; };
+		2C000000000000000000021C /* RectangleTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleTool.swift; sourceTree = "<group>"; };
+		2C000000000000000000021D /* ArrowTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowTool.swift; sourceTree = "<group>"; };
+		2C000000000000000000021E /* PenTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenTool.swift; sourceTree = "<group>"; };
+		2C000000000000000000021F /* HighlightTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightTool.swift; sourceTree = "<group>"; };
+		2C0000000000000000000220 /* TextTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTool.swift; sourceTree = "<group>"; };
+		2C0000000000000000000221 /* MosaicTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicTool.swift; sourceTree = "<group>"; };
+		2C0000000000000000000222 /* AnnotationPrefsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationPrefsStore.swift; sourceTree = "<group>"; };
+		2C0000000000000000000223 /* EllipseTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseTool.swift; sourceTree = "<group>"; };
+		2C0000000000000000000224 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		2C0000000000000000000225 /* AnnotationConfigPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationConfigPanel.swift; sourceTree = "<group>"; };
+		2C0000000000000000000226 /* PowerAssertionHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerAssertionHolder.swift; sourceTree = "<group>"; };
+		2C0000000000000000000227 /* CaffeineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineController.swift; sourceTree = "<group>"; };
+		2C0000000000000000000228 /* CaffeineFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineFeature.swift; sourceTree = "<group>"; };
+		2C0000000000000000000229 /* CaffeineSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineSettingsView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000230 /* ClipboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardItem.swift; sourceTree = "<group>"; };
+		2C0000000000000000000231 /* ClipboardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardStore.swift; sourceTree = "<group>"; };
+		2C0000000000000000000232 /* ClipboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMonitor.swift; sourceTree = "<group>"; };
+		2C0000000000000000000233 /* ClipboardHistoryWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardHistoryWindow.swift; sourceTree = "<group>"; };
+		2C0000000000000000000234 /* ClipboardHotkeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardHotkeyStore.swift; sourceTree = "<group>"; };
+		2C0000000000000000000235 /* ClipboardFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardFeature.swift; sourceTree = "<group>"; };
+		2C0000000000000000000236 /* ClipboardSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardSettingsView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000240 /* HostStatsSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStatsSampler.swift; sourceTree = "<group>"; };
+		2C0000000000000000000241 /* SystemMonitorFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitorFeature.swift; sourceTree = "<group>"; };
+		2C0000000000000000000242 /* SystemMonitorSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitorSettingsView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000243 /* ConversionFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFormat.swift; sourceTree = "<group>"; };
+		2C0000000000000000000244 /* ConversionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionEngine.swift; sourceTree = "<group>"; };
+		2C0000000000000000000245 /* ConversionJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionJob.swift; sourceTree = "<group>"; };
+		2C0000000000000000000246 /* ConversionQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionQueue.swift; sourceTree = "<group>"; };
+		2C0000000000000000000247 /* PictureConvertWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureConvertWindow.swift; sourceTree = "<group>"; };
+		2C0000000000000000000248 /* PictureConvertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureConvertView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000249 /* PictureConvertFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureConvertFeature.swift; sourceTree = "<group>"; };
+		2C000000000000000000024A /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		2C000000000000000000024B /* ExtractResultPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractResultPanel.swift; sourceTree = "<group>"; };
+		2C000000000000000000024C /* TranslatedImageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatedImageRenderer.swift; sourceTree = "<group>"; };
+		2C000000000000000000024D /* TranslationPrefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationPrefs.swift; sourceTree = "<group>"; };
+		2C000000000000000000024E /* BarcodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeService.swift; sourceTree = "<group>"; };
+		2C000000000000000000024F /* BarcodeOverlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeOverlayController.swift; sourceTree = "<group>"; };
+		2C0000000000000000000260 /* PictureEditOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureEditOps.swift; sourceTree = "<group>"; };
+		2C0000000000000000000261 /* BackgroundRemoval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRemoval.swift; sourceTree = "<group>"; };
+		2C0000000000000000000262 /* PictureEditModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureEditModel.swift; sourceTree = "<group>"; };
+		2C0000000000000000000263 /* PictureEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureEditView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000264 /* PictureEditWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureEditWindow.swift; sourceTree = "<group>"; };
+		2C0000000000000000000265 /* PictureEditFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureEditFeature.swift; sourceTree = "<group>"; };
+		2C0000000000000000000266 /* ZoomableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableImageView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000267 /* WindowHitTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHitTester.swift; sourceTree = "<group>"; };
+		2C0000000000000000000268 /* UIElementHitTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElementHitTester.swift; sourceTree = "<group>"; };
+		2C0000000000000000000270 /* CoffeePurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePurchaseManager.swift; sourceTree = "<group>"; };
+		2C0000000000000000000271 /* SupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000272 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text.json.storekit; path = Configuration.storekit; sourceTree = "<group>"; };
+		2C0000000000000000000280 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000290 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		2C0000000000000000000291 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000292 /* QRCodeWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeWindow.swift; sourceTree = "<group>"; };
+		2C0000000000000000000293 /* QRCodeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeFeature.swift; sourceTree = "<group>"; };
+		2C0000000000000000000299 /* UpdaterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdaterController.swift; sourceTree = "<group>"; };
+		2C000000000000000000029A /* AdaptiveColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveColor.swift; sourceTree = "<group>"; };
+		2C000000000000000000029B /* OutputDirectoryResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputDirectoryResolver.swift; sourceTree = "<group>"; };
+		2C000000000000000000029C /* AppearanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceManager.swift; sourceTree = "<group>"; };
+		2C00000000000000000002A0 /* RecordingPrefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingPrefs.swift; sourceTree = "<group>"; };
+		2C00000000000000000002A1 /* RecordingMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingMode.swift; sourceTree = "<group>"; };
+		2C00000000000000000002A2 /* RecordingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingState.swift; sourceTree = "<group>"; };
+		2C00000000000000000002A3 /* RecordingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingEngine.swift; sourceTree = "<group>"; };
+		2C00000000000000000002A4 /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
+		2C00000000000000000002A5 /* RecordingTargetPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingTargetPicker.swift; sourceTree = "<group>"; };
+		2C00000000000000000002A6 /* RecordingToolbarPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingToolbarPanel.swift; sourceTree = "<group>"; };
+		2C00000000000000000002A7 /* RecordingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingFeature.swift; sourceTree = "<group>"; };
+		2C00000000000000000002A8 /* RecordingSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSettingsView.swift; sourceTree = "<group>"; };
+		2C00000000000000000002B0 /* ArchiveFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFormat.swift; sourceTree = "<group>"; };
+		2C00000000000000000002B1 /* ArchiveEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveEngine.swift; sourceTree = "<group>"; };
+		2C00000000000000000002B2 /* ArchiveJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveJob.swift; sourceTree = "<group>"; };
+		2C00000000000000000002B3 /* ArchiveQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveQueue.swift; sourceTree = "<group>"; };
+		2C00000000000000000002B4 /* ArchiveFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveFeature.swift; sourceTree = "<group>"; };
+		2C00000000000000000002B5 /* ArchiveWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveWindow.swift; sourceTree = "<group>"; };
+		2C00000000000000000002B6 /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
+		2C0000000000000000000300 /* SanityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanityTests.swift; sourceTree = "<group>"; };
+		2C0000000000000000000301 /* MenuBarManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarManagerTests.swift; sourceTree = "<group>"; };
+		2C0000000000000000000302 /* CaffeineControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineControllerTests.swift; sourceTree = "<group>"; };
+		2C0000000000000000000303 /* CaffeineFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineFeatureTests.swift; sourceTree = "<group>"; };
+		2C0000000000000000000304 /* MockPowerAssertionHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPowerAssertionHolder.swift; sourceTree = "<group>"; };
+		2C0000000000000000000305 /* ClipboardItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardItemTests.swift; sourceTree = "<group>"; };
+		2C0000000000000000000306 /* ClipboardStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardStoreTests.swift; sourceTree = "<group>"; };
+		2C0000000000000000000307 /* ClipboardMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMonitorTests.swift; sourceTree = "<group>"; };
+		2C0000000000000000000308 /* ClipboardFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardFeatureTests.swift; sourceTree = "<group>"; };
+		2C0000000000000000000309 /* HostStatsSamplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStatsSamplerTests.swift; sourceTree = "<group>"; };
+		2C000000000000000000030A /* ConversionFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionFormatTests.swift; sourceTree = "<group>"; };
+		2C000000000000000000030B /* ConversionEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionEngineTests.swift; sourceTree = "<group>"; };
+		2C000000000000000000030C /* ConversionQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionQueueTests.swift; sourceTree = "<group>"; };
+		4E0000000000000000000400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0000000000000000000402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E0000000000000000000403 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		54ED0EDB2FAE327B00B57825 /* CapyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CapyBuddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54ED0EDC2FAE327C00B57825 /* CapyBuddyPro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CapyBuddyPro-Info.plist"; sourceTree = "<group>"; };
+		54ED0EDD2FAE361400B57825 /* CapyBuddyPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CapyBuddyPro.entitlements; sourceTree = "<group>"; };
+		7A0000000000000000000001 /* VideoEditorFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorFeature.swift; sourceTree = "<group>"; };
+		7A0000000000000000000002 /* VideoEditorPrefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorPrefs.swift; sourceTree = "<group>"; };
+		7A0000000000000000000003 /* VideoEditorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorModel.swift; sourceTree = "<group>"; };
+		7A0000000000000000000004 /* VideoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorView.swift; sourceTree = "<group>"; };
+		7A0000000000000000000005 /* VideoEditorSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorSettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A0000000000000000000012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54ED0ED42FAE327B00B57825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54ED0EE12FB3355F00B57825 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				0A000000000000000000000F /* CapyBuddy */,
+				1B0000000000000000000200 /* CapyBuddyTests */,
+				0A0000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A0000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000000000000000000004 /* CapyBuddy.app */,
+				0A0000000000000000000020 /* CapyBuddyTests.xctest */,
+				54ED0EDB2FAE327B00B57825 /* CapyBuddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A000000000000000000000F /* CapyBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				54ED0EDD2FAE361400B57825 /* CapyBuddyPro.entitlements */,
+				1B0000000000000000000100 /* App */,
+				1B0000000000000000000101 /* Core */,
+				1B0000000000000000000102 /* MenuBar */,
+				1B0000000000000000000103 /* Settings */,
+				1B0000000000000000000104 /* Features */,
+				4E0000000000000000000402 /* Assets.xcassets */,
+				4E0000000000000000000403 /* Localizable.xcstrings */,
+			);
+			path = CapyBuddy;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000100 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000200 /* AppDelegate.swift */,
+				4E0000000000000000000400 /* Info.plist */,
+				54ED0EDC2FAE327C00B57825 /* CapyBuddyPro-Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000101 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000201 /* Feature.swift */,
+				2C0000000000000000000202 /* FeatureRegistry.swift */,
+				2C0000000000000000000203 /* PermissionChecker.swift */,
+				2C0000000000000000000204 /* KeyCombo.swift */,
+				2C0000000000000000000299 /* UpdaterController.swift */,
+				2C000000000000000000029A /* AdaptiveColor.swift */,
+				2C000000000000000000029B /* OutputDirectoryResolver.swift */,
+				2C000000000000000000029C /* AppearanceManager.swift */,
+				88A7009B605084EAA82415F9 /* Licensing */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000102 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000205 /* MenuBarManager.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000103 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000206 /* SettingsWindowController.swift */,
+				2C0000000000000000000207 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000104 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1B0000000000000000000105 /* SpaceShortcut */,
+				1B0000000000000000000106 /* Screenshot */,
+				1B0000000000000000000201 /* Caffeine */,
+				1B0000000000000000000202 /* Clipboard */,
+				1B0000000000000000000203 /* SystemMonitor */,
+				1B0000000000000000000204 /* PictureConvert */,
+				1B0000000000000000000205 /* PictureEdit */,
+				1B0000000000000000000206 /* Support */,
+				1B0000000000000000000207 /* Feedback */,
+				1B0000000000000000000208 /* QRCode */,
+				1B0000000000000000000209 /* Archive */,
+				1B000000000000000000010B /* Recording */,
+				7A00000000000000000000F0 /* VideoEditor */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000105 /* SpaceShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000208 /* SpaceShortcutFeature.swift */,
+				2C0000000000000000000209 /* EventTapManager.swift */,
+				2C000000000000000000020A /* BindingStore.swift */,
+				2C000000000000000000020B /* AppLauncher.swift */,
+				2C000000000000000000020C /* SpaceShortcutSettingsView.swift */,
+				2C0000000000000000000212 /* SpaceShortcutState.swift */,
+				2C0000000000000000000213 /* ChordHUDController.swift */,
+				2C0000000000000000000214 /* SpaceShortcutStats.swift */,
+			);
+			path = SpaceShortcut;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000106 /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				2C000000000000000000020D /* ScreenshotFeature.swift */,
+				2C000000000000000000020E /* ScreenshotManager.swift */,
+				2C000000000000000000020F /* SelectionOverlayWindow.swift */,
+				2C0000000000000000000210 /* PinnedImageWindow.swift */,
+				2C0000000000000000000211 /* ScreenshotSettingsView.swift */,
+				2C000000000000000000021A /* MagnifierView.swift */,
+				2C0000000000000000000267 /* WindowHitTester.swift */,
+				2C0000000000000000000268 /* UIElementHitTester.swift */,
+				1B0000000000000000000107 /* Hotkey */,
+				1B0000000000000000000108 /* Annotation */,
+			);
+			path = Screenshot;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000107 /* Hotkey */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000215 /* HotkeyConfig.swift */,
+				2C0000000000000000000216 /* HotkeyTap.swift */,
+			);
+			path = Hotkey;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000108 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000217 /* Annotation.swift */,
+				2C0000000000000000000218 /* AnnotationCanvasView.swift */,
+				2C0000000000000000000219 /* AnnotationToolbarPanel.swift */,
+				2C0000000000000000000222 /* AnnotationPrefsStore.swift */,
+				2C0000000000000000000224 /* Selection.swift */,
+				2C0000000000000000000225 /* AnnotationConfigPanel.swift */,
+				1B0000000000000000000109 /* Tools */,
+				1B000000000000000000010A /* Extract */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000109 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2C000000000000000000021B /* ToolHandler.swift */,
+				2C000000000000000000021C /* RectangleTool.swift */,
+				2C0000000000000000000223 /* EllipseTool.swift */,
+				2C000000000000000000021D /* ArrowTool.swift */,
+				2C000000000000000000021E /* PenTool.swift */,
+				2C000000000000000000021F /* HighlightTool.swift */,
+				2C0000000000000000000220 /* TextTool.swift */,
+				2C0000000000000000000221 /* MosaicTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1B000000000000000000010A /* Extract */ = {
+			isa = PBXGroup;
+			children = (
+				2C000000000000000000024A /* OCRService.swift */,
+				2C000000000000000000024B /* ExtractResultPanel.swift */,
+				2C000000000000000000024C /* TranslatedImageRenderer.swift */,
+				2C000000000000000000024D /* TranslationPrefs.swift */,
+				2C000000000000000000024E /* BarcodeService.swift */,
+				2C000000000000000000024F /* BarcodeOverlayController.swift */,
+			);
+			path = Extract;
+			sourceTree = "<group>";
+		};
+		1B000000000000000000010B /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				2C00000000000000000002A7 /* RecordingFeature.swift */,
+				2C00000000000000000002A4 /* RecordingManager.swift */,
+				2C00000000000000000002A3 /* RecordingEngine.swift */,
+				2C00000000000000000002A2 /* RecordingState.swift */,
+				2C00000000000000000002A1 /* RecordingMode.swift */,
+				2C00000000000000000002A0 /* RecordingPrefs.swift */,
+				2C00000000000000000002A5 /* RecordingTargetPicker.swift */,
+				2C00000000000000000002A6 /* RecordingToolbarPanel.swift */,
+				2C00000000000000000002A8 /* RecordingSettingsView.swift */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000200 /* CapyBuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000300 /* SanityTests.swift */,
+				2C0000000000000000000301 /* MenuBarManagerTests.swift */,
+				2C0000000000000000000302 /* CaffeineControllerTests.swift */,
+				2C0000000000000000000303 /* CaffeineFeatureTests.swift */,
+				2C0000000000000000000304 /* MockPowerAssertionHolder.swift */,
+				2C0000000000000000000305 /* ClipboardItemTests.swift */,
+				2C0000000000000000000306 /* ClipboardStoreTests.swift */,
+				2C0000000000000000000307 /* ClipboardMonitorTests.swift */,
+				2C0000000000000000000308 /* ClipboardFeatureTests.swift */,
+				2C0000000000000000000309 /* HostStatsSamplerTests.swift */,
+				2C000000000000000000030A /* ConversionFormatTests.swift */,
+				2C000000000000000000030B /* ConversionEngineTests.swift */,
+				2C000000000000000000030C /* ConversionQueueTests.swift */,
+			);
+			path = CapyBuddyTests;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000201 /* Caffeine */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000226 /* PowerAssertionHolder.swift */,
+				2C0000000000000000000227 /* CaffeineController.swift */,
+				2C0000000000000000000228 /* CaffeineFeature.swift */,
+				2C0000000000000000000229 /* CaffeineSettingsView.swift */,
+			);
+			path = Caffeine;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000202 /* Clipboard */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000230 /* ClipboardItem.swift */,
+				2C0000000000000000000231 /* ClipboardStore.swift */,
+				2C0000000000000000000232 /* ClipboardMonitor.swift */,
+				2C0000000000000000000233 /* ClipboardHistoryWindow.swift */,
+				2C0000000000000000000234 /* ClipboardHotkeyStore.swift */,
+				2C0000000000000000000235 /* ClipboardFeature.swift */,
+				2C0000000000000000000236 /* ClipboardSettingsView.swift */,
+			);
+			path = Clipboard;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000203 /* SystemMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000240 /* HostStatsSampler.swift */,
+				2C0000000000000000000241 /* SystemMonitorFeature.swift */,
+				2C0000000000000000000242 /* SystemMonitorSettingsView.swift */,
+			);
+			path = SystemMonitor;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000204 /* PictureConvert */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000243 /* ConversionFormat.swift */,
+				2C0000000000000000000244 /* ConversionEngine.swift */,
+				2C0000000000000000000245 /* ConversionJob.swift */,
+				2C0000000000000000000246 /* ConversionQueue.swift */,
+				2C0000000000000000000247 /* PictureConvertWindow.swift */,
+				2C0000000000000000000248 /* PictureConvertView.swift */,
+				2C0000000000000000000249 /* PictureConvertFeature.swift */,
+			);
+			path = PictureConvert;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000205 /* PictureEdit */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000260 /* PictureEditOps.swift */,
+				2C0000000000000000000261 /* BackgroundRemoval.swift */,
+				2C0000000000000000000262 /* PictureEditModel.swift */,
+				2C0000000000000000000263 /* PictureEditView.swift */,
+				2C0000000000000000000264 /* PictureEditWindow.swift */,
+				2C0000000000000000000265 /* PictureEditFeature.swift */,
+				2C0000000000000000000266 /* ZoomableImageView.swift */,
+			);
+			path = PictureEdit;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000206 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000270 /* CoffeePurchaseManager.swift */,
+				2C0000000000000000000271 /* SupportView.swift */,
+				2C0000000000000000000272 /* Configuration.storekit */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000207 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000280 /* FeedbackView.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000208 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				2C0000000000000000000290 /* QRCodeGenerator.swift */,
+				2C0000000000000000000291 /* QRCodeView.swift */,
+				2C0000000000000000000292 /* QRCodeWindow.swift */,
+				2C0000000000000000000293 /* QRCodeFeature.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		1B0000000000000000000209 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				2C00000000000000000002B0 /* ArchiveFormat.swift */,
+				2C00000000000000000002B1 /* ArchiveEngine.swift */,
+				2C00000000000000000002B2 /* ArchiveJob.swift */,
+				2C00000000000000000002B3 /* ArchiveQueue.swift */,
+				2C00000000000000000002B4 /* ArchiveFeature.swift */,
+				2C00000000000000000002B5 /* ArchiveWindow.swift */,
+				2C00000000000000000002B6 /* ArchiveView.swift */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
+		7A00000000000000000000F0 /* VideoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				7A0000000000000000000001 /* VideoEditorFeature.swift */,
+				7A0000000000000000000003 /* VideoEditorModel.swift */,
+				7A0000000000000000000004 /* VideoEditorView.swift */,
+				7A0000000000000000000002 /* VideoEditorPrefs.swift */,
+				7A0000000000000000000005 /* VideoEditorSettingsView.swift */,
+			);
+			path = VideoEditor;
+			sourceTree = "<group>";
+		};
+		88A7009B605084EAA82415F9 /* Licensing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Licensing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A0000000000000000000010 /* CapyBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0000000000000000000016 /* Build configuration list for PBXNativeTarget "CapyBuddyTests" */;
+			buildPhases = (
+				0A0000000000000000000011 /* Sources */,
+				0A0000000000000000000012 /* Frameworks */,
+				0A0000000000000000000013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A0000000000000000000018 /* PBXTargetDependency */,
+			);
+			name = CapyBuddyTests;
+			productName = CapyBuddyTests;
+			productReference = 0A0000000000000000000020 /* CapyBuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54ED0E822FAE327B00B57825 /* CapyBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54ED0ED82FAE327B00B57825 /* Build configuration list for PBXNativeTarget "CapyBuddy" */;
+			buildPhases = (
+				54ED0E832FAE327B00B57825 /* Sources */,
+				54ED0ED42FAE327B00B57825 /* Frameworks */,
+				54ED0ED52FAE327B00B57825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CapyBuddy;
+			productName = CapyBuddy;
+			productReference = 54ED0EDB2FAE327B00B57825 /* CapyBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					0A0000000000000000000010 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 54ED0E822FAE327B00B57825;
+					};
+				};
+			};
+			buildConfigurationList = 0A0000000000000000000009 /* Build configuration list for PBXProject "CapyBuddy" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				es,
+				fr,
+				de,
+				ru,
+				Base,
+			);
+			mainGroup = 0A0000000000000000000002;
+			packageReferences = (
+				54ED0EDF2FB3355F00B57825 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			productRefGroup = 0A0000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A0000000000000000000010 /* CapyBuddyTests */,
+				54ED0E822FAE327B00B57825 /* CapyBuddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A0000000000000000000013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54ED0ED52FAE327B00B57825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54ED0ED62FAE327B00B57825 /* Assets.xcassets in Resources */,
+				54ED0ED72FAE327B00B57825 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A0000000000000000000011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0000000000000000000400 /* SanityTests.swift in Sources */,
+				3D0000000000000000000401 /* MenuBarManagerTests.swift in Sources */,
+				3D0000000000000000000402 /* CaffeineControllerTests.swift in Sources */,
+				3D0000000000000000000403 /* CaffeineFeatureTests.swift in Sources */,
+				3D0000000000000000000404 /* MockPowerAssertionHolder.swift in Sources */,
+				3D0000000000000000000405 /* ClipboardItemTests.swift in Sources */,
+				3D0000000000000000000406 /* ClipboardStoreTests.swift in Sources */,
+				3D0000000000000000000407 /* ClipboardMonitorTests.swift in Sources */,
+				3D0000000000000000000408 /* ClipboardFeatureTests.swift in Sources */,
+				3D0000000000000000000409 /* HostStatsSamplerTests.swift in Sources */,
+				3D000000000000000000040A /* ConversionFormatTests.swift in Sources */,
+				3D000000000000000000040B /* ConversionEngineTests.swift in Sources */,
+				3D000000000000000000040C /* ConversionQueueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54ED0E832FAE327B00B57825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54ED0E842FAE327B00B57825 /* AppDelegate.swift in Sources */,
+				54ED0E852FAE327B00B57825 /* Feature.swift in Sources */,
+				54ED0E862FAE327B00B57825 /* FeatureRegistry.swift in Sources */,
+				54ED0E872FAE327B00B57825 /* PermissionChecker.swift in Sources */,
+				54ED0EFF2FAE327B00B57825 /* UpdaterController.swift in Sources */,
+				54ED0F102FAE327B00B57825 /* AdaptiveColor.swift in Sources */,
+				54ED0F112FAE327B00B57825 /* OutputDirectoryResolver.swift in Sources */,
+				54ED0F122FAE327B00B57825 /* AppearanceManager.swift in Sources */,
+				54ED0E882FAE327B00B57825 /* KeyCombo.swift in Sources */,
+				54ED0E892FAE327B00B57825 /* MenuBarManager.swift in Sources */,
+				54ED0E8A2FAE327B00B57825 /* SettingsWindowController.swift in Sources */,
+				54ED0E8B2FAE327B00B57825 /* SettingsView.swift in Sources */,
+				54ED0E8C2FAE327B00B57825 /* SpaceShortcutFeature.swift in Sources */,
+				54ED0E8D2FAE327B00B57825 /* EventTapManager.swift in Sources */,
+				54ED0E8E2FAE327B00B57825 /* BindingStore.swift in Sources */,
+				54ED0E8F2FAE327B00B57825 /* AppLauncher.swift in Sources */,
+				54ED0E902FAE327B00B57825 /* SpaceShortcutSettingsView.swift in Sources */,
+				54ED0E912FAE327B00B57825 /* ScreenshotFeature.swift in Sources */,
+				54ED0E922FAE327B00B57825 /* ScreenshotManager.swift in Sources */,
+				54ED0E932FAE327B00B57825 /* SelectionOverlayWindow.swift in Sources */,
+				54ED0E942FAE327B00B57825 /* PinnedImageWindow.swift in Sources */,
+				54ED0E952FAE327B00B57825 /* ScreenshotSettingsView.swift in Sources */,
+				54ED0E962FAE327B00B57825 /* SpaceShortcutState.swift in Sources */,
+				54ED0E972FAE327B00B57825 /* ChordHUDController.swift in Sources */,
+				54ED0E972FAE327B00B57826 /* SpaceShortcutStats.swift in Sources */,
+				54ED0E982FAE327B00B57825 /* HotkeyConfig.swift in Sources */,
+				54ED0E992FAE327B00B57825 /* HotkeyTap.swift in Sources */,
+				54ED0E9A2FAE327B00B57825 /* Annotation.swift in Sources */,
+				54ED0E9B2FAE327B00B57825 /* AnnotationCanvasView.swift in Sources */,
+				54ED0E9C2FAE327B00B57825 /* AnnotationToolbarPanel.swift in Sources */,
+				54ED0E9D2FAE327B00B57825 /* MagnifierView.swift in Sources */,
+				54ED0E9E2FAE327B00B57825 /* ToolHandler.swift in Sources */,
+				54ED0E9F2FAE327B00B57825 /* RectangleTool.swift in Sources */,
+				54ED0EA02FAE327B00B57825 /* ArrowTool.swift in Sources */,
+				54ED0EA12FAE327B00B57825 /* PenTool.swift in Sources */,
+				54ED0EA22FAE327B00B57825 /* HighlightTool.swift in Sources */,
+				54ED0EA32FAE327B00B57825 /* TextTool.swift in Sources */,
+				54ED0EA42FAE327B00B57825 /* MosaicTool.swift in Sources */,
+				54ED0EA52FAE327B00B57825 /* AnnotationPrefsStore.swift in Sources */,
+				54ED0EA62FAE327B00B57825 /* EllipseTool.swift in Sources */,
+				54ED0EA72FAE327B00B57825 /* Selection.swift in Sources */,
+				54ED0EA82FAE327B00B57825 /* AnnotationConfigPanel.swift in Sources */,
+				54ED0EA92FAE327B00B57825 /* OCRService.swift in Sources */,
+				54ED0EAA2FAE327B00B57825 /* ExtractResultPanel.swift in Sources */,
+				54ED0EAB2FAE327B00B57825 /* TranslatedImageRenderer.swift in Sources */,
+				54ED0EAC2FAE327B00B57825 /* TranslationPrefs.swift in Sources */,
+				54ED0EAD2FAE327B00B57825 /* BarcodeService.swift in Sources */,
+				54ED0EAE2FAE327B00B57825 /* BarcodeOverlayController.swift in Sources */,
+				54ED0EAF2FAE327B00B57825 /* PowerAssertionHolder.swift in Sources */,
+				54ED0EB02FAE327B00B57825 /* CaffeineController.swift in Sources */,
+				54ED0EB12FAE327B00B57825 /* CaffeineFeature.swift in Sources */,
+				54ED0EB22FAE327B00B57825 /* CaffeineSettingsView.swift in Sources */,
+				54ED0EB32FAE327B00B57825 /* ClipboardItem.swift in Sources */,
+				54ED0EB42FAE327B00B57825 /* ClipboardStore.swift in Sources */,
+				54ED0EB52FAE327B00B57825 /* ClipboardMonitor.swift in Sources */,
+				54ED0EB62FAE327B00B57825 /* ClipboardHistoryWindow.swift in Sources */,
+				54ED0EB72FAE327B00B57825 /* ClipboardHotkeyStore.swift in Sources */,
+				54ED0EB82FAE327B00B57825 /* ClipboardFeature.swift in Sources */,
+				54ED0EB92FAE327B00B57825 /* ClipboardSettingsView.swift in Sources */,
+				54ED0EBA2FAE327B00B57825 /* HostStatsSampler.swift in Sources */,
+				54ED0EBB2FAE327B00B57825 /* SystemMonitorFeature.swift in Sources */,
+				54ED0EBC2FAE327B00B57825 /* SystemMonitorSettingsView.swift in Sources */,
+				54ED0EBD2FAE327B00B57825 /* ConversionFormat.swift in Sources */,
+				54ED0EBE2FAE327B00B57825 /* ConversionEngine.swift in Sources */,
+				54ED0EBF2FAE327B00B57825 /* ConversionJob.swift in Sources */,
+				54ED0EC02FAE327B00B57825 /* ConversionQueue.swift in Sources */,
+				54ED0EC12FAE327B00B57825 /* PictureConvertWindow.swift in Sources */,
+				54ED0EC22FAE327B00B57825 /* PictureConvertView.swift in Sources */,
+				54ED0EC32FAE327B00B57825 /* PictureConvertFeature.swift in Sources */,
+				54ED0EC42FAE327B00B57825 /* PictureEditOps.swift in Sources */,
+				54ED0EC52FAE327B00B57825 /* BackgroundRemoval.swift in Sources */,
+				54ED0EC62FAE327B00B57825 /* PictureEditModel.swift in Sources */,
+				54ED0EC72FAE327B00B57825 /* PictureEditView.swift in Sources */,
+				54ED0EC82FAE327B00B57825 /* PictureEditWindow.swift in Sources */,
+				54ED0EC92FAE327B00B57825 /* PictureEditFeature.swift in Sources */,
+				54ED0ECA2FAE327B00B57825 /* ZoomableImageView.swift in Sources */,
+				54ED0ECB2FAE327B00B57825 /* WindowHitTester.swift in Sources */,
+				54ED0ECC2FAE327B00B57825 /* UIElementHitTester.swift in Sources */,
+				54ED0ECD2FAE327B00B57825 /* CoffeePurchaseManager.swift in Sources */,
+				54ED0ECE2FAE327B00B57825 /* SupportView.swift in Sources */,
+				54ED0ECF2FAE327B00B57825 /* FeedbackView.swift in Sources */,
+				54ED0ED02FAE327B00B57825 /* QRCodeGenerator.swift in Sources */,
+				54ED0ED12FAE327B00B57825 /* QRCodeView.swift in Sources */,
+				54ED0ED22FAE327B00B57825 /* QRCodeWindow.swift in Sources */,
+				54ED0ED32FAE327B00B57825 /* QRCodeFeature.swift in Sources */,
+				54ED0F002FAE327B00B57825 /* RecordingPrefs.swift in Sources */,
+				54ED0F012FAE327B00B57825 /* RecordingMode.swift in Sources */,
+				54ED0F022FAE327B00B57825 /* RecordingState.swift in Sources */,
+				54ED0F032FAE327B00B57825 /* RecordingEngine.swift in Sources */,
+				54ED0F042FAE327B00B57825 /* RecordingManager.swift in Sources */,
+				54ED0F052FAE327B00B57825 /* RecordingTargetPicker.swift in Sources */,
+				54ED0F062FAE327B00B57825 /* RecordingToolbarPanel.swift in Sources */,
+				54ED0F072FAE327B00B57825 /* RecordingFeature.swift in Sources */,
+				54ED0F082FAE327B00B57825 /* RecordingSettingsView.swift in Sources */,
+				7A0000000000000000000011 /* VideoEditorFeature.swift in Sources */,
+				7A0000000000000000000012 /* VideoEditorPrefs.swift in Sources */,
+				7A0000000000000000000013 /* VideoEditorModel.swift in Sources */,
+				7A0000000000000000000014 /* VideoEditorView.swift in Sources */,
+				7A0000000000000000000015 /* VideoEditorSettingsView.swift in Sources */,
+				54ED0F092FAE327B00B57825 /* ArchiveFormat.swift in Sources */,
+				54ED0F0A2FAE327B00B57825 /* ArchiveEngine.swift in Sources */,
+				54ED0F0B2FAE327B00B57825 /* ArchiveJob.swift in Sources */,
+				54ED0F0C2FAE327B00B57825 /* ArchiveQueue.swift in Sources */,
+				54ED0F0D2FAE327B00B57825 /* ArchiveFeature.swift in Sources */,
+				54ED0F0E2FAE327B00B57825 /* ArchiveWindow.swift in Sources */,
+				54ED0F0F2FAE327B00B57825 /* ArchiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A0000000000000000000018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = 0A0000000000000000000017 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A000000000000000000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9A6Q68R555;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG CAPYBUDDY_DIRECT $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0A000000000000000000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9A6Q68R555;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0A0000000000000000000014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlai.CapyBuddy.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapyBuddy.app/Contents/MacOS/CapyBuddy";
+			};
+			name = Debug;
+		};
+		0A0000000000000000000015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlai.CapyBuddy.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapyBuddy.app/Contents/MacOS/CapyBuddy";
+			};
+			name = Release;
+		};
+		54ED0ED92FAE327B00B57825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CapyBuddy/CapyBuddyPro.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 9A6Q68R555;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "CapyBuddy/App/CapyBuddyPro-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CapyBuddy Pro";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlai.CapyBuddy;
+				PRODUCT_NAME = CapyBuddy;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG CAPYBUDDY_DIRECT $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		54ED0EDA2FAE327B00B57825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CapyBuddy/CapyBuddyPro.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 9A6Q68R555;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "CapyBuddy/App/CapyBuddyPro-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CapyBuddy Pro";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlai.CapyBuddy;
+				PRODUCT_NAME = CapyBuddy;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = CAPYBUDDY_DIRECT;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A0000000000000000000009 /* Build configuration list for PBXProject "CapyBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A000000000000000000000A /* Debug */,
+				0A000000000000000000000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0000000000000000000016 /* Build configuration list for PBXNativeTarget "CapyBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0000000000000000000014 /* Debug */,
+				0A0000000000000000000015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54ED0ED82FAE327B00B57825 /* Build configuration list for PBXNativeTarget "CapyBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54ED0ED92FAE327B00B57825 /* Debug */,
+				54ED0EDA2FAE327B00B57825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54ED0EDF2FB3355F00B57825 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54ED0EE02FB3355F00B57825 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54ED0EDF2FB3355F00B57825 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0A0000000000000000000001 /* Project object */;
+}
