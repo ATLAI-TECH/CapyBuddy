@@ -1,0 +1,18 @@
+{
+  "images": [
+    {
+      "idiom": "mac",
+      "scale": "1x",
+      "filename": "termbuddy_128.png"
+    },
+    {
+      "idiom": "mac",
+      "scale": "2x",
+      "filename": "termbuddy_256.png"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}
