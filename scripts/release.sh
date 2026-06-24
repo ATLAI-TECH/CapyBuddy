@@ -4,9 +4,9 @@
 #
 # Distribution model (open source):
 #   * The .zip ships as a GitHub Release asset:
-#       https://github.com/ATLAI-TECH/CapyBuddyOfficial/releases/download/vX.Y.Z/CapyBuddy-X.Y.Z.zip
+#       https://github.com/ATLAI-TECH/CapyBuddy/releases/download/vX.Y.Z/CapyBuddy-X.Y.Z.zip
 #   * appcast.xml is written to docs/ and served via GitHub Pages:
-#       https://atlai-tech.github.io/CapyBuddyOfficial/appcast.xml
+#       https://atlai-tech.github.io/CapyBuddy/appcast.xml
 #     (matches SUFeedURL in CapyBuddyPro-Info.plist)
 #
 # Prereqs (one-time):
@@ -47,7 +47,7 @@ RELEASES_DIR="releases"          # gitignored staging area for signed zips
 DOCS_DIR="docs"                  # GitHub Pages source — appcast.xml lives here
 APPCAST_PATH="$DOCS_DIR/appcast.xml"
 
-REPO_SLUG="ATLAI-TECH/CapyBuddyOfficial"
+REPO_SLUG="ATLAI-TECH/CapyBuddy"
 RELEASES_URL="https://github.com/$REPO_SLUG/releases"
 
 SHORT_VERSION=$(/usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" "$INFO_PLIST")
