@@ -80,7 +80,12 @@ if [ -f "$APPCAST_PATH" ] && grep -q "sparkle:version=\"${BUILD_VERSION}\"" "$AP
     exit 1
 fi
 
-rm -rf "$BUILD_DIR"
+# Clear the staging dir so it holds ONLY this version's zip. generate_appcast
+# applies --download-url-prefix (tag-specific) to every archive it finds, so a
+# stale zip from a previous version would be handed this tag's URL. Older
+# versions are preserved from the existing docs/appcast.xml instead — Sparkle
+# keeps appcast entries whose archives are no longer in the directory.
+rm -rf "$BUILD_DIR" "$RELEASES_DIR"
 mkdir -p "$BUILD_DIR" "$RELEASES_DIR" "$DOCS_DIR"
 
 echo "==> [1/7] Archiving (scheme: $SCHEME, version: $SHORT_VERSION build $BUILD_VERSION)"
