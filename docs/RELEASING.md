@@ -9,7 +9,7 @@ feed; when a newer build is published they show the familiar
 
 | Piece | Where |
 |-------|-------|
-| Update feed (`appcast.xml`) | `docs/appcast.xml`, served by **GitHub Pages** at `https://atlai-tech.github.io/CappyBuddyOfficial/appcast.xml` |
+| Update feed (`appcast.xml`) | `docs/appcast.xml`, served by **GitHub Pages** at `https://atlai-tech.github.io/CapyBuddyOfficial/appcast.xml` |
 | App download (`.zip`) | **GitHub Release asset** under tag `vX.Y.Z` |
 | Feed URL the app reads | `SUFeedURL` in `CapyBuddy/App/CapyBuddyPro-Info.plist` (points at the Pages URL above) |
 | Update signature | EdDSA, signed by the private key in the keychain; public key is `SUPublicEDKey` in the Info.plist |
