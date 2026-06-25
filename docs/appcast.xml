@@ -9,7 +9,7 @@
             <sparkle:version>8</sparkle:version>
             <sparkle:shortVersionString>2.0.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ATLAI-TECH/CapyBuddy/releases/download/v2.0.4/CapyBuddy-2.0.4.dmg" length="5558022" type="application/octet-stream" sparkle:edSignature="2TGJ1ybTe64rB3AjVqKjG94DeviP7u+WnxKhrf9yhfkkUOPXXZMUP/E/9ICxyrTExU+QXAJrL0RHlQpQWAY2Dg=="/>
+            <enclosure url="https://github.com/ATLAI-TECH/CapyBuddy/releases/download/v2.0.4/CapyBuddy-2.0.4.dmg" length="5291740" type="application/octet-stream" sparkle:edSignature="/630PxFsJ1XVD2FbeycM1R2Mabop0GlTGlSBgkOZxV3IMHrsQ8loIoQgtooHRaJO9s+E9Z236QN2vIunoi/mDA=="/>
         </item>
         <item>
             <title>2.0.3</title>
