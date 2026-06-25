@@ -3,40 +3,13 @@
     <channel>
         <title>CapyBuddy</title>
         <item>
-            <title>2.0.5</title>
-            <pubDate>Thu, 25 Jun 2026 20:24:31 +0100</pubDate>
+            <title>2.0.6</title>
+            <pubDate>Thu, 25 Jun 2026 20:36:37 +0100</pubDate>
             <link>https://github.com/ATLAI-TECH/CapyBuddy/releases</link>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>2.0.5</sparkle:shortVersionString>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>2.0.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ATLAI-TECH/CapyBuddy/releases/download/v2.0.5/CapyBuddy-2.0.5.dmg" length="5290622" type="application/octet-stream" sparkle:edSignature="r42AhK7GaqYHUyYdBO5bcIzaL516CslyHrLkLA68KUQVtQA1EL3vUmAmZZjo0ACCg7ryZQyxROpshdyKXT/ZCQ=="/>
-        </item>
-        <item>
-            <title>2.0.4</title>
-            <pubDate>Thu, 25 Jun 2026 17:37:18 +0100</pubDate>
-            <link>https://github.com/ATLAI-TECH/CapyBuddy/releases</link>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>2.0.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ATLAI-TECH/CapyBuddy/releases/download/v2.0.4/CapyBuddy-2.0.4.dmg" length="5291740" type="application/octet-stream" sparkle:edSignature="/630PxFsJ1XVD2FbeycM1R2Mabop0GlTGlSBgkOZxV3IMHrsQ8loIoQgtooHRaJO9s+E9Z236QN2vIunoi/mDA=="/>
-        </item>
-        <item>
-            <title>2.0.3</title>
-            <pubDate>Thu, 25 Jun 2026 13:56:06 +0100</pubDate>
-            <link>https://github.com/ATLAI-TECH/CapyBuddy/releases</link>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>2.0.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ATLAI-TECH/CapyBuddy/releases/download/v2.0.3/CapyBuddy-2.0.3.zip" length="5340434" type="application/octet-stream" sparkle:edSignature="bhNmyNNBvVBL/uwUy+LELnXMyPVQ3dOULApboqRQm6NbUmYCLh9VEe/XacWq5LCeTDPtc1rm2mS0INBoUV5XAw=="/>
-        </item>
-        <item>
-            <title>2.0.1</title>
-            <pubDate>Thu, 25 Jun 2026 09:43:32 +0100</pubDate>
-            <link>https://github.com/ATLAI-TECH/CapyBuddy/releases</link>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ATLAI-TECH/CapyBuddy/releases/download/v2.0.1/CapyBuddy-2.0.1.zip" length="5321692" type="application/octet-stream" sparkle:edSignature="hrGAt2tYkbyqEndkws0heeToU4ae4S0TxTYTWaM/B11rAGoAfixsus4VSpiHq+j7N6t8ykUkQxMnsLoI8leCDw=="/>
+            <enclosure url="https://github.com/ATLAI-TECH/CapyBuddy/releases/download/v2.0.6/CapyBuddy-2.0.6.dmg" length="5289892" type="application/octet-stream" sparkle:edSignature="YHs2aTnzznzRMtPQgdTjSULPKuiQ0cXKKb2Rj5r9CaFEkVqLf/WROqELUk5Uv/y8V5Q/eRGHCCu5pb6Dvmr3DQ=="/>
         </item>
     </channel>
 </rss>
