@@ -11,23 +11,11 @@ final class BindingStore: ObservableObject {
 
     @Published private(set) var bindings: [UInt16: AppBinding] = [:]
 
-    @Published var triggerMode: SpaceShortcutTriggerMode = .longPressSpace {
-        didSet {
-            guard oldValue != triggerMode else { return }
-            UserDefaults.standard.set(triggerMode.rawValue, forKey: triggerModeKey)
-        }
-    }
-
     // Stable across the SpaceBuddy → SpaceShortcut rename so existing users keep their bindings.
     private let storageKey = "CapyBuddy.SpaceBuddy.bindings.v1"
-    private let triggerModeKey = "CapyBuddy.SpaceShortcut.triggerMode.v1"
 
     init() {
         load()
-        if let raw = UserDefaults.standard.string(forKey: triggerModeKey),
-           let mode = SpaceShortcutTriggerMode(rawValue: raw) {
-            triggerMode = mode
-        }
     }
 
     struct Row: Identifiable, Hashable {

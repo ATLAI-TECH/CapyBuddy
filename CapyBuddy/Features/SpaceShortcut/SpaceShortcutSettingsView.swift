@@ -24,16 +24,10 @@ struct SpaceShortcutSettingsView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            // The Carbon hotkey backend used by ⌃Space / ⌥Space doesn't need
-            // Accessibility upfront — the permission is requested lazily on
-            // first chord. Only the long-press backend installs a permanent
-            // CGEventTap, so the banners only apply there.
-            if store.triggerMode == .longPressSpace {
-                if !accessibilityGranted {
-                    permissionBanner
-                } else if !tapActive {
-                    tapInactiveBanner
-                }
+            if !accessibilityGranted {
+                permissionBanner
+            } else if !tapActive {
+                tapInactiveBanner
             }
 
             bindingsTab
@@ -52,8 +46,6 @@ struct SpaceShortcutSettingsView: View {
 
     private var bindingsTab: some View {
         VStack(alignment: .leading, spacing: 14) {
-            triggerModePicker
-
             Text(triggerHintText)
                 .font(.callout)
                 .foregroundStyle(.secondary)
@@ -132,25 +124,8 @@ struct SpaceShortcutSettingsView: View {
         }
     }
 
-    private var triggerModePicker: some View {
-        Picker("Trigger", selection: $store.triggerMode) {
-            Text("Hold Space").tag(SpaceShortcutTriggerMode.longPressSpace)
-            Text("⌃ Space").tag(SpaceShortcutTriggerMode.controlSpace)
-            Text("⌥ Space").tag(SpaceShortcutTriggerMode.optionSpace)
-        }
-        .pickerStyle(.segmented)
-        .frame(maxWidth: 360)
-    }
-
     private var triggerHintText: LocalizedStringKey {
-        switch store.triggerMode {
-        case .longPressSpace:
-            return "Tap **Space** for a normal space. Hold ~200ms and the chord HUD appears — then press a bound key to launch its app. (Note: macOS blocks this trigger in password fields.)"
-        case .controlSpace:
-            return "Tap **⌃Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode — works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)"
-        case .optionSpace:
-            return "Tap **⌥Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode — works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)"
-        }
+        "Tap **Space** for a normal space. Hold ~200ms and the chord HUD appears — then press a bound key to launch its app. (Note: macOS blocks this trigger in password fields.)"
     }
 
     private var tapInactiveBanner: some View {

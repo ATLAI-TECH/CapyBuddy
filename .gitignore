@@ -23,3 +23,4 @@ releases/
 # Sparkle signing keys — never commit private keys
 *.private
 dsa_priv.pem
+build_release.log
