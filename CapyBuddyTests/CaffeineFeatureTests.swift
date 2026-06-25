@@ -100,7 +100,7 @@ final class CaffeineFeatureTests: XCTestCase {
 
         let items = feature.makeMenuBarItems()
         XCTAssertEqual(items.count, 3)
-        XCTAssertEqual(items[0].title, "On — Indefinitely")
+        XCTAssertEqual(items[0].title, "On - Indefinitely")
     }
 
     func testTurnOffMenuItemDeactivates() {
@@ -126,14 +126,14 @@ final class CaffeineFeatureTests: XCTestCase {
         XCTAssertEqual(feature.menuTitle, "Keep Awake")
 
         feature.controller?.activate(duration: 600)
-        XCTAssertTrue(feature.menuTitle.hasPrefix("Keep Awake — "))
+        XCTAssertTrue(feature.menuTitle.hasPrefix("Keep Awake - "))
         XCTAssertTrue(feature.menuTitle.contains(":"))
 
         feature.controller?.deactivate()
         XCTAssertEqual(feature.menuTitle, "Keep Awake")
 
         feature.controller?.activate(duration: nil)
-        XCTAssertEqual(feature.menuTitle, "Keep Awake — On")
+        XCTAssertEqual(feature.menuTitle, "Keep Awake - On")
     }
 
     func testToggleActionFlipsControllerState() {

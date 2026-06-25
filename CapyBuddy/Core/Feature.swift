@@ -56,7 +56,7 @@ protocol Feature: AnyObject {
 
     /// Title for the feature's top-level row in the dropdown. Defaults
     /// to `displayName`. Override to surface live state — e.g. Caffeine
-    /// appends a countdown ("Keep Awake — 14:32") so the user doesn't
+    /// appends a countdown ("Keep Awake - 14:32") so the user doesn't
     /// have to hover into the submenu just to see how much time is left.
     var menuTitle: String { get }
 

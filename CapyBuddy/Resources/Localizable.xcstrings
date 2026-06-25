@@ -229,7 +229,7 @@
     "Choose App…": {},
     "Choose where archives and extracted files are saved.": {},
     "Choose where converted images are saved.": {},
-    "Choose which tools appear in CapyBuddy's dropdown — and preview the result on the right.": {},
+    "Choose which tools appear in CapyBuddy's dropdown - and preview the result on the right.": {},
     "Choose…": {},
     "Chord": {},
     "Circle": {},
@@ -262,7 +262,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Кликните окно или перетащите  ·  ESC — отмена"
+            "value": "Кликните окно или перетащите  ·  ESC - отмена"
           }
         },
         "zh-Hans": {
@@ -448,7 +448,7 @@
       }
     },
     "Delete": {},
-    "Detected %@ archive — will extract to the same folder.": {},
+    "Detected %@ archive - will extract to the same folder.": {},
     "Dismiss": {},
     "Display": {},
     "Dots": {},
@@ -522,7 +522,7 @@
         }
       }
     },
-    "Drag the box — or its corners — on the video above to set the crop region.": {},
+    "Drag the box - or its corners - on the video above to set the crop region.": {},
     "Drag-and-drop converter between common picture formats (PNG, JPEG, HEIC, TIFF, GIF, AVIF, ICO, BMP, ICNS, JP2).": {
       "extractionState": "manual",
       "localizations": {
@@ -791,7 +791,7 @@
     "For more information and support, visit": {},
     "Foreground": {},
     "Format": {},
-    "Found a bug? Want a new tool inside CapyBuddy? Submit it here — your report goes straight to our issue tracker. No GitHub account needed.": {},
+    "Found a bug? Want a new tool inside CapyBuddy? Submit it here - your report goes straight to our issue tracker. No GitHub account needed.": {},
     "Frame rate": {},
     "From": {},
     "From idle, the hotkey opens region selection. While recording, it stops and saves.": {},
@@ -830,8 +830,8 @@
         }
       }
     },
-    "Generate QR codes — colors, dot/eye shapes, embedded logo, save or copy.": {},
-    "Get CapyBuddy Pro — %@": {},
+    "Generate QR codes - colors, dot/eye shapes, embedded logo, save or copy.": {},
+    "Get CapyBuddy Pro - %@": {},
     "Get it": {},
     "GIFs are exported at up to 480 px, 12 fps.": {},
     "GO": {},
@@ -880,7 +880,7 @@
     "Hover a button, text field, or sub-region to snap to its bounds. Click without dragging to capture; drag anywhere to override with a manual rect.": {},
     "How it works": {},
     "How this works": {},
-    "If CapyBuddy saves you a few minutes a day, consider tipping the developer. One-time purchases — no subscriptions, no accounts.": {},
+    "If CapyBuddy saves you a few minutes a day, consider tipping the developer. One-time purchases - no subscriptions, no accounts.": {},
     "Indefinitely": {},
     "Keep Awake": {
       "extractionState": "manual",
@@ -995,7 +995,7 @@
     "Loading prices…": {},
     "Logo": {},
     "macOS version, CapyBuddy version, Mac model": {},
-    "Make your terminal go “lobster.” The next-gen AI chat-first IDE — chat from your phone or Mac, let the server do the work.": {},
+    "Make your terminal go “lobster.” The next-gen AI chat-first IDE - chat from your phone or Mac, let the server do the work.": {},
     "Maximum entries": {},
     "Menu Bar": {
       "extractionState": "manual",
@@ -1477,8 +1477,8 @@
         }
       }
     },
-    "Play, trim, crop, mute or re-speed a video clip and export it — handy right after a screen recording.": {},
-    "Pre-download the languages you'll need so translation works offline. macOS handles the actual download — first-time use of a missing pack triggers the system download prompt automatically.": {},
+    "Play, trim, crop, mute or re-speed a video clip and export it - handy right after a screen recording.": {},
+    "Pre-download the languages you'll need so translation works offline. macOS handles the actual download - first-time use of a missing pack triggers the system download prompt automatically.": {},
     "Press a key…": {},
     "Press the shortcut anywhere to open the clipboard history panel.": {},
     "Press this combination anywhere to start a region capture.": {},
@@ -2046,20 +2046,20 @@
         }
       }
     },
-    "Tap **⌃Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode — works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)": {},
-    "Tap **⌥Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode — works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)": {},
-    "Tap **Space** for a normal space. Hold ~200ms and the chord HUD appears — then press a bound key to launch its app. (Note: macOS blocks this trigger in password fields.)": {},
+    "Tap **⌃Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode - works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)": {},
+    "Tap **⌥Space** to open the chord HUD, then press a bound key to launch its app. ESC or any unbound key cancels. Plain Space is never observed by CapyBuddy in this mode - works correctly in password fields. (Accessibility is requested the first time you trigger a chord.)": {},
+    "Tap **Space** for a normal space. Hold ~200ms and the chord HUD appears - then press a bound key to launch its app. (Note: macOS blocks this trigger in password fields.)": {},
     "TermBuddy": {},
     "Thank you for the %@! ❤️": {},
-    "Thanks for your support — Pro is unlocked.": {},
+    "Thanks for your support - Pro is unlocked.": {},
     "Thanks! Issue #%lld submitted.": {},
     "The editor does basic, lossy edits: trim the in/out points, crop (free-drag box or a fixed aspect ratio), change playback speed, and mute the audio track. Each export re-encodes the clip.": {},
     "The keyboard event tap isn't active. macOS reports this process as **%@** for Accessibility. If the entry in System Settings refers to a stale build path, remove it and re-add the binary below, then click Restart.": {},
     "The source file has no video track.": {},
     "Theme": {},
     "This file doesn't contain a video track.": {},
-    "This is a CapyBuddy Pro feature — unlock to turn it on.": {},
-    "This text is already in %@ — pick a different target language.": {},
+    "This is a CapyBuddy Pro feature - unlock to turn it on.": {},
+    "This text is already in %@ - pick a different target language.": {},
     "To": {},
     "Translate": {
       "extractionState": "manual",
@@ -2417,34 +2417,34 @@
     "Your friendly Mac companion.": {},
     "Your report has been posted to GitHub.": {},
     "Your report is sent to our Cloudflare Worker, which creates a public issue at github.com/ATLAI-TECH/CapyBuddyTools. Don't include private info you wouldn't want public.": {},
-    "New version %@ available — Update…": {
+    "New version %@ available - Update…": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "New version %@ available — Update…"
+            "value": "New version %@ available - Update…"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "有新版本 %@ 可用 — 点击更新"
+            "value": "有新版本 %@ 可用 - 点击更新"
           }
         }
       }
     },
-    "New version available — Update…": {
+    "New version available - Update…": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "New version available — Update…"
+            "value": "New version available - Update…"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "有新版本可用 — 点击更新"
+            "value": "有新版本可用 - 点击更新"
           }
         }
       }

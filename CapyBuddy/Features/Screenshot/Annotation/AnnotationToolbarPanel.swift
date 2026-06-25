@@ -111,7 +111,7 @@ final class AnnotationToolbarModel: ObservableObject {
                 translateProgress = nil
                 let name = TranslationPrefs.displayName(for: translateTargetLanguage)
                 translateError = String(
-                    localized: "This text is already in \(name) — pick a different target language."
+                    localized: "This text is already in \(name) - pick a different target language."
                 )
                 return
             }

@@ -100,7 +100,7 @@ struct VideoEditorView: View {
                 Spacer()
             }
             if model.cropPreset.isCustom {
-                Text("Drag the box — or its corners — on the video above to set the crop region.")
+                Text("Drag the box - or its corners - on the video above to set the crop region.")
                     .font(.callout)
                     .foregroundStyle(.secondary)
             }

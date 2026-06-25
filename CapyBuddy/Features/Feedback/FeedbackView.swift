@@ -98,7 +98,7 @@ struct FeedbackView: View {
         VStack(alignment: .leading, spacing: 6) {
             Text("Send feedback")
                 .font(.title2).bold()
-            Text("Found a bug? Want a new tool inside CapyBuddy? Submit it here — your report goes straight to our issue tracker. No GitHub account needed.")
+            Text("Found a bug? Want a new tool inside CapyBuddy? Submit it here - your report goes straight to our issue tracker. No GitHub account needed.")
                 .font(.callout)
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -154,14 +154,14 @@ struct FeedbackView: View {
                 }
 
                 if kind.showsEnvironment {
-                    labeledField("Environment", hint: "Auto-filled — edit if needed") {
+                    labeledField("Environment", hint: "Auto-filled - edit if needed") {
                         TextField("macOS version, CapyBuddy version, Mac model", text: $environment)
                             .textFieldStyle(.roundedBorder)
                             .disabled(submitState == .submitting)
                     }
                 }
 
-                labeledField("Contact email", hint: "Optional — only if you want a follow-up") {
+                labeledField("Contact email", hint: "Optional - only if you want a follow-up") {
                     TextField("you@example.com", text: $contact)
                         .textFieldStyle(.roundedBorder)
                         .disabled(submitState == .submitting)

@@ -446,7 +446,7 @@ private struct RecordingToolbarView: View {
                 onSymbol: "mic.fill",
                 offSymbol: "mic.slash.fill",
                 tint: .blue,
-                help: micOn ? "Microphone on — click to disable" : "Microphone off — click to enable"
+                help: micOn ? "Microphone on - click to disable" : "Microphone off - click to enable"
             ) {
                 handleMicToggle()
             }
@@ -455,7 +455,7 @@ private struct RecordingToolbarView: View {
                 onSymbol: "speaker.wave.2.fill",
                 offSymbol: "speaker.slash.fill",
                 tint: .blue,
-                help: audioOn ? "System audio on — click to disable" : "System audio off — click to enable"
+                help: audioOn ? "System audio on - click to disable" : "System audio off - click to enable"
             ) {
                 audioOn.toggle()
                 RecordingPrefs.captureSystemAudio = audioOn
@@ -465,7 +465,7 @@ private struct RecordingToolbarView: View {
                 onSymbol: "cursorarrow",
                 offSymbol: "cursorarrow.slash",
                 tint: .blue,
-                help: cursorOn ? "Cursor visible — click to hide" : "Cursor hidden — click to show"
+                help: cursorOn ? "Cursor visible - click to hide" : "Cursor hidden - click to show"
             ) {
                 cursorOn.toggle()
                 RecordingPrefs.showsCursor = cursorOn

@@ -125,7 +125,7 @@ struct SpaceShortcutSettingsView: View {
     }
 
     private var triggerHintText: LocalizedStringKey {
-        "Tap **Space** for a normal space. Hold ~200ms and the chord HUD appears — then press a bound key to launch its app. (Note: macOS blocks this trigger in password fields.)"
+        "Tap **Space** for a normal space. Hold ~200ms and the chord HUD appears - then press a bound key to launch its app. (Note: macOS blocks this trigger in password fields.)"
     }
 
     private var tapInactiveBanner: some View {

@@ -87,7 +87,7 @@ final class SpaceShortcutFeature: Feature {
         // `restartTap()` (Settings "Re-check" or the next launch) brings the
         // tap up the moment it's granted.
         guard PermissionChecker.isAccessibilityGranted(prompt: false) else {
-            NSLog("[CapyBuddy] SpaceShortcut: dormant — Accessibility not granted yet (no prompt at launch).")
+            NSLog("[CapyBuddy] SpaceShortcut: dormant - Accessibility not granted yet (no prompt at launch).")
             return
         }
         if !eventTap.start() {

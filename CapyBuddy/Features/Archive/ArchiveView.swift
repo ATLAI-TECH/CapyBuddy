@@ -114,7 +114,7 @@ struct ArchiveRootView: View {
             HStack(spacing: 10) {
                 Image(systemName: "shippingbox.fill")
                     .foregroundStyle(Palette.accent)
-                Text("Detected \(format.displayName) archive — will extract to the same folder.")
+                Text("Detected \(format.displayName) archive - will extract to the same folder.")
                     .font(.system(size: 12))
                     .foregroundStyle(Palette.primary)
                 Spacer()

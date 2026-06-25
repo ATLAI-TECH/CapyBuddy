@@ -219,7 +219,7 @@ struct PictureEditRootView: View {
             Text("Drop an image here")
                 .font(.title3.bold())
                 .foregroundStyle(EditorPalette.primary)
-            Text("PNG, JPEG, HEIC, TIFF, GIF, AVIF, BMP, ICNS, ICO, JP2 — anything macOS can read.")
+            Text("PNG, JPEG, HEIC, TIFF, GIF, AVIF, BMP, ICNS, ICO, JP2 - anything macOS can read.")
                 .font(.callout)
                 .foregroundStyle(EditorPalette.muted)
                 .multilineTextAlignment(.center)

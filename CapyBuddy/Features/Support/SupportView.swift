@@ -34,7 +34,7 @@ private struct CoffeeSection: View {
                 Text("☕")
                 Spacer()
             }
-            Text("If CapyBuddy saves you a few minutes a day, consider tipping the developer. One-time purchases — no subscriptions, no accounts.")
+            Text("If CapyBuddy saves you a few minutes a day, consider tipping the developer. One-time purchases - no subscriptions, no accounts.")
                 .font(.callout)
                 .foregroundStyle(.secondary)
 
@@ -215,7 +215,7 @@ private struct TermBuddyPromoCard: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("TermBuddy")
                         .font(.title3).bold()
-                    Text("Make your terminal go “lobster.” The next-gen AI chat-first IDE — chat from your phone or Mac, let the server do the work.")
+                    Text("Make your terminal go “lobster.” The next-gen AI chat-first IDE - chat from your phone or Mac, let the server do the work.")
                         .font(.callout)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)

@@ -154,7 +154,7 @@ private struct GeneralSettingsView: View {
 
             GroupBox("Permissions") {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("CapyBuddy never asks for these at install. Grant a permission only when a tool needs it — or set it up ahead of time here.")
+                    Text("CapyBuddy never asks for these at install. Grant a permission only when a tool needs it - or set it up ahead of time here.")
                         .font(.callout)
                         .foregroundStyle(.secondary)
                     PermissionsOverview()
@@ -168,7 +168,7 @@ private struct GeneralSettingsView: View {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Take the welcome tour")
                             .font(.callout.weight(.semibold))
-                        Text("A quick, animated walkthrough of every tool. Shown once on first launch — replay it any time.")
+                        Text("A quick, animated walkthrough of every tool. Shown once on first launch - replay it any time.")
                             .font(.callout)
                             .foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
@@ -244,7 +244,7 @@ private struct MenuBarSettingsView: View {
                 VStack(alignment: .leading, spacing: 3) {
                     Text("Menu Bar")
                         .font(.title2.bold())
-                    Text("Choose which tools appear in CapyBuddy's dropdown — and preview the result on the right.")
+                    Text("Choose which tools appear in CapyBuddy's dropdown - and preview the result on the right.")
                         .font(.callout)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)

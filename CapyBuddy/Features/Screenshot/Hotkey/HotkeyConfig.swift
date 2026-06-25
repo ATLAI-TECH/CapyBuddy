@@ -59,7 +59,7 @@ struct HotkeyConfig: Codable, Equatable {
     static let presets: [Preset] = [
         Preset(
             label: "⌃1",
-            detail: "Default — single-modifier, no macOS system conflict.",
+            detail: "Default - single-modifier, no macOS system conflict.",
             config: HotkeyConfig(keyCode: UInt16(kVK_ANSI_1), flags: [.maskControl])
         ),
         Preset(

@@ -19,9 +19,9 @@ final class CaffeineFeature: NSObject, Feature {
     var menuTitle: String {
         guard let controller, controller.isActive else { return displayName }
         if let remaining = controller.remainingTime {
-            return "\(displayName) — \(Self.formatRemaining(remaining))"
+            return "\(displayName) - \(Self.formatRemaining(remaining))"
         }
-        return "\(displayName) — On"
+        return "\(displayName) - On"
     }
 
     /// Caffeine's submenu IS the on/off mechanism — pick a duration to
@@ -119,7 +119,7 @@ final class CaffeineFeature: NSObject, Feature {
         if let remaining = controller.remainingTime {
             statusTitle = "Remaining: \(Self.formatRemaining(remaining))"
         } else {
-            statusTitle = "On — Indefinitely"
+            statusTitle = "On - Indefinitely"
         }
         let status = NSMenuItem(title: statusTitle, action: nil, keyEquivalent: "")
         status.isEnabled = false
@@ -151,7 +151,7 @@ final class CaffeineFeature: NSObject, Feature {
         if let remaining = controller.remainingTime {
             item.title = "Remaining: \(Self.formatRemaining(remaining))"
         } else {
-            item.title = "On — Indefinitely"
+            item.title = "On - Indefinitely"
         }
     }
 

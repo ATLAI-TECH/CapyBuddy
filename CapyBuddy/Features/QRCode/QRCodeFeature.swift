@@ -7,7 +7,7 @@ final class QRCodeFeature: NSObject, Feature {
     let id = "qrCode"
     let displayName = String(localized: "QR Code")
     let iconSystemName = "qrcode"
-    let summary = String(localized: "Generate QR codes — colors, dot/eye shapes, embedded logo, save or copy.")
+    let summary = String(localized: "Generate QR codes - colors, dot/eye shapes, embedded logo, save or copy.")
 
     /// Direct action: clicking the dropdown row opens the generator
     /// directly. No submenu, no Settings tab — there's nothing to

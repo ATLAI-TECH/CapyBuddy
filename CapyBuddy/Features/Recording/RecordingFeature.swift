@@ -103,8 +103,8 @@ final class RecordingFeature: NSObject, Feature {
         let elapsed = RecordingState.formatElapsed(manager.state.elapsedSeconds)
         let label: String
         switch manager.state.phase {
-        case .recording: label = "Recording — \(elapsed)"
-        case .paused:    label = "Paused — \(elapsed)"
+        case .recording: label = "Recording - \(elapsed)"
+        case .paused:    label = "Paused - \(elapsed)"
         case .preparing: label = "Preparing…"
         case .counting:  label = "Starts in \(manager.state.countdownRemaining)…"
         case .stopping:  label = "Stopping…"
@@ -160,15 +160,15 @@ final class RecordingFeature: NSObject, Feature {
         }
     }
 
-    /// Surface live "Recording — 00:42" on the top-level menu row so the
+    /// Surface live "Recording - 00:42" on the top-level menu row so the
     /// user can glance at the menu bar and see they're still capturing.
     var menuTitle: String {
         switch manager.state.phase {
         case .recording, .paused:
             let elapsed = RecordingState.formatElapsed(manager.state.elapsedSeconds)
-            return "\(displayName) — \(elapsed)"
+            return "\(displayName) - \(elapsed)"
         case .counting:
-            return "\(displayName) — \(manager.state.countdownRemaining)…"
+            return "\(displayName) - \(manager.state.countdownRemaining)…"
         default:
             return displayName
         }

@@ -240,7 +240,7 @@ private struct TranslationSettingsSection: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text("Language packs")
                     .font(.subheadline.bold())
-                Text("Pre-download the languages you'll need so translation works offline. macOS handles the actual download — first-time use of a missing pack triggers the system download prompt automatically.")
+                Text("Pre-download the languages you'll need so translation works offline. macOS handles the actual download - first-time use of a missing pack triggers the system download prompt automatically.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }

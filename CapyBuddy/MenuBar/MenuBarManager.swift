@@ -98,9 +98,9 @@ final class MenuBarManager: NSObject, NSMenuDelegate {
     private func makeUpdateItem() -> NSMenuItem {
         let title: String
         if let v = UpdaterController.shared.availableVersion {
-            title = String(localized: "New version \(v) available — Update…")
+            title = String(localized: "New version \(v) available - Update…")
         } else {
-            title = String(localized: "New version available — Update…")
+            title = String(localized: "New version available - Update…")
         }
         let item = NSMenuItem(
             title: title,

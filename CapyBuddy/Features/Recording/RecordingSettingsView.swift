@@ -35,7 +35,7 @@ struct RecordingSettingsView: View {
                     granted: screenRecordingGranted,
                     label: "Screen Recording",
                     detail: screenRecordingGranted
-                        ? "Allowed — CapyBuddy can capture screens and windows."
+                        ? "Allowed - CapyBuddy can capture screens and windows."
                         : "Required to capture the screen.",
                     button: "Open Settings",
                     action: PermissionChecker.openScreenRecordingSettings
@@ -44,7 +44,7 @@ struct RecordingSettingsView: View {
                     granted: accessibilityGranted,
                     label: "Accessibility",
                     detail: accessibilityGranted
-                        ? "Allowed — the global hotkey is active."
+                        ? "Allowed - the global hotkey is active."
                         : "Required to listen for the global start/stop hotkey.",
                     button: "Open Settings",
                     action: PermissionChecker.openAccessibilitySettings
@@ -53,7 +53,7 @@ struct RecordingSettingsView: View {
                     granted: microphoneGranted,
                     label: "Microphone",
                     detail: microphoneGranted
-                        ? "Allowed — microphone recordings include voice."
+                        ? "Allowed - microphone recordings include voice."
                         : "Only needed when the microphone toggle is on. Without this, mic capture is silently skipped.",
                     button: "Open Settings",
                     action: PermissionChecker.openMicrophoneSettings
@@ -287,7 +287,7 @@ struct RecordingSettingsView: View {
         // we try to capture.
         let alert = NSAlert()
         alert.messageText = "Permission reset"
-        alert.informativeText = "Quit and re-open CapyBuddy, then try recording. macOS will ask for Screen Recording access — grant it."
+        alert.informativeText = "Quit and re-open CapyBuddy, then try recording. macOS will ask for Screen Recording access - grant it."
         alert.addButton(withTitle: "OK")
         alert.runModal()
         screenRecordingGranted = PermissionChecker.isScreenRecordingGranted()

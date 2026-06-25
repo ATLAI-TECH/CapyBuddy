@@ -11,7 +11,7 @@ final class VideoEditorFeature: NSObject, Feature {
     let id = "videoEditor"
     let displayName = String(localized: "Video Editor")
     let iconSystemName = "film"
-    let summary = String(localized: "Play, trim, crop, mute or re-speed a video clip and export it — handy right after a screen recording.")
+    let summary = String(localized: "Play, trim, crop, mute or re-speed a video clip and export it - handy right after a screen recording.")
 
     var isEnabled: Bool = false
     var showsInMenuBar: Bool = true

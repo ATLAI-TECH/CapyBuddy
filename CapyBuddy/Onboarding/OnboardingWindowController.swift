@@ -265,7 +265,7 @@ private struct WelcomePage: View {
             VStack(spacing: 10) {
                 Text("Welcome to CapyBuddy")
                     .font(.system(size: 30, weight: .bold))
-                Text("Your friendly Mac companion — a menu-bar toolbox of small, handy utilities, all in one place.")
+                Text("Your friendly Mac companion - a menu-bar toolbox of small, handy utilities, all in one place.")
                     .font(.title3)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
@@ -550,7 +550,7 @@ private struct OthersPage: View {
                     .frame(height: 48)
                 Text("And more tools")
                     .font(.system(size: 24, weight: .bold))
-                Text("These all work right away — no permissions needed.")
+                Text("These all work right away - no permissions needed.")
                     .font(.callout)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
@@ -698,7 +698,7 @@ private struct HeroFeature: Identifiable {
                 animation: .screenshot,
                 hotkey: .screenshot,
                 bullets: [
-                    Bullet(icon: "pencil.tip.crop.circle", text: "Annotate — arrows, text, shapes, blur"),
+                    Bullet(icon: "pencil.tip.crop.circle", text: "Annotate - arrows, text, shapes, blur"),
                     Bullet(icon: "pin.fill", text: "Pin it to float on top of every window"),
                     Bullet(icon: "doc.on.doc", text: "Copy or save it in a single keystroke"),
                 ],
@@ -733,7 +733,7 @@ private struct HeroFeature: Identifiable {
                 animation: .spaceShortcut,
                 hotkey: .none,
                 bullets: [
-                    Bullet(icon: "bolt.fill", text: "Launch or focus any app instantly — no mouse"),
+                    Bullet(icon: "bolt.fill", text: "Launch or focus any app instantly - no mouse"),
                     Bullet(icon: "keyboard", text: "Bind any app to a key, e.g. Space + S → Safari"),
                 ],
                 permission: .accessibility,
@@ -761,7 +761,7 @@ private struct TourFeature: Identifiable {
                     blurb: "Compress and extract zip, tar, tar.gz, and gz archives."),
         TourFeature(id: "qrCode", icon: "qrcode",
                     name: "QR Code",
-                    blurb: "Generate styled QR codes — colors, shapes, a logo, then save or copy."),
+                    blurb: "Generate styled QR codes - colors, shapes, a logo, then save or copy."),
         TourFeature(id: "pictureConvert", icon: "photo.on.rectangle.angled",
                     name: "Picture Converter",
                     blurb: "Convert between PNG, JPEG, HEIC, AVIF, and more by drag-and-drop."),

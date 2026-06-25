@@ -214,10 +214,10 @@ final class RecordingManager {
                 // So we gate explicitly.
                 var micWanted = RecordingPrefs.captureMicrophone
                 if micWanted && !PermissionChecker.isMicrophoneGranted() {
-                    NSLog("[Recording] mic requested but not yet granted — prompting")
+                    NSLog("[Recording] mic requested but not yet granted - prompting")
                     let granted = await self.requestMicAsync()
                     if !granted {
-                        NSLog("[Recording] mic denied — dropping mic from this capture")
+                        NSLog("[Recording] mic denied - dropping mic from this capture")
                         micWanted = false
                         await MainActor.run {
                             self.presentMicDeniedNotice()
