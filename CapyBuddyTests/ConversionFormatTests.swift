@@ -12,6 +12,7 @@ final class ConversionFormatTests: XCTestCase {
         XCTAssertEqual(ConversionFormat.tiff.displayName, "TIFF")
         XCTAssertEqual(ConversionFormat.gif.displayName, "GIF")
         XCTAssertEqual(ConversionFormat.avif.displayName, "AVIF")
+        XCTAssertEqual(ConversionFormat.webp.displayName, "WebP")
         XCTAssertEqual(ConversionFormat.ico.displayName, "ICO")
         XCTAssertEqual(ConversionFormat.bmp.displayName, "BMP")
         XCTAssertEqual(ConversionFormat.icns.displayName, "ICNS")
@@ -35,6 +36,7 @@ final class ConversionFormatTests: XCTestCase {
         XCTAssertEqual(ConversionFormat.tiff.utiIdentifier, "public.tiff")
         XCTAssertEqual(ConversionFormat.gif.utiIdentifier, "com.compuserve.gif")
         XCTAssertEqual(ConversionFormat.avif.utiIdentifier, "public.avif")
+        XCTAssertEqual(ConversionFormat.webp.utiIdentifier, "org.webmproject.webp")
         XCTAssertEqual(ConversionFormat.ico.utiIdentifier, "com.microsoft.ico")
         XCTAssertEqual(ConversionFormat.bmp.utiIdentifier, "com.microsoft.bmp")
         XCTAssertEqual(ConversionFormat.icns.utiIdentifier, "com.apple.icns")
@@ -45,6 +47,7 @@ final class ConversionFormatTests: XCTestCase {
         XCTAssertTrue(ConversionFormat.jpeg.isLossy)
         XCTAssertTrue(ConversionFormat.heic.isLossy)
         XCTAssertTrue(ConversionFormat.avif.isLossy)
+        XCTAssertTrue(ConversionFormat.webp.isLossy)
         XCTAssertTrue(ConversionFormat.jpeg2000.isLossy)
         XCTAssertFalse(ConversionFormat.png.isLossy)
         XCTAssertFalse(ConversionFormat.tiff.isLossy)
@@ -76,6 +79,7 @@ final class ConversionFormatTests: XCTestCase {
             ("photo.tiff", .tiff),
             ("photo.gif", .gif),
             ("photo.avif", .avif),
+            ("photo.webp", .webp),
             ("photo.ico", .ico),
             ("photo.bmp", .bmp),
             ("photo.icns", .icns),
@@ -93,13 +97,12 @@ final class ConversionFormatTests: XCTestCase {
     func testInferredReturnsNilForUnsupportedExtensions() {
         XCTAssertNil(ConversionFormat.inferred(from: URL(fileURLWithPath: "/tmp/x.raw")))
         XCTAssertNil(ConversionFormat.inferred(from: URL(fileURLWithPath: "/tmp/x.txt")))
-        XCTAssertNil(ConversionFormat.inferred(from: URL(fileURLWithPath: "/tmp/x.webp")))
         XCTAssertNil(ConversionFormat.inferred(from: URL(fileURLWithPath: "/tmp/no_extension")))
     }
 
     func testAllCasesCoversEveryFormat() {
         // Locks the public surface — adding a new case requires a deliberate
         // update here, which forces a corresponding UI/test sweep.
-        XCTAssertEqual(ConversionFormat.allCases.count, 10)
+        XCTAssertEqual(ConversionFormat.allCases.count, 11)
     }
 }

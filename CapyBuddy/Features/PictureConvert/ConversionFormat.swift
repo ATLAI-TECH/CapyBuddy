@@ -2,15 +2,18 @@ import Foundation
 import ImageIO
 import UniformTypeIdentifiers
 
-/// One of the image formats CapyBuddy can read AND write via ImageIO on
-/// macOS 26. WebP was deliberately left out — ImageIO can only **read**
-/// WebP, never write it, so offering it as a target would always fail.
-/// AVIF stands in as the modern lossy/lossless target.
+/// One of the image formats CapyBuddy can read (and usually write) via
+/// ImageIO. AVIF stands in as the modern lossy/lossless target.
+///
+/// WebP is read-only on macOS — ImageIO decodes it but most macOS
+/// versions can't encode it. It's still listed so users can pick WebP
+/// files as a *source* and convert them out; the runtime
+/// `writableOnThisSystem` filter at the bottom drops it from the target
+/// list whenever the active macOS can't actually write it.
 ///
 /// ICO / BMP / ICNS / JPEG2000 added in v2: ImageIO advertises them in
-/// `CGImageDestinationCopyTypeIdentifiers()` on macOS 26, and the runtime
-/// `writableOnThisSystem` filter at the bottom transparently drops any
-/// that the active macOS doesn't actually support.
+/// `CGImageDestinationCopyTypeIdentifiers()` on macOS 26, and the same
+/// runtime filter transparently drops any the active macOS doesn't support.
 enum ConversionFormat: String, CaseIterable, Identifiable, Hashable {
     case png
     case jpeg
@@ -18,6 +21,7 @@ enum ConversionFormat: String, CaseIterable, Identifiable, Hashable {
     case tiff
     case gif
     case avif
+    case webp
     case ico
     case bmp
     case icns
@@ -33,6 +37,7 @@ enum ConversionFormat: String, CaseIterable, Identifiable, Hashable {
         case .tiff:     return "TIFF"
         case .gif:      return "GIF"
         case .avif:     return "AVIF"
+        case .webp:     return "WebP"
         case .ico:      return "ICO"
         case .bmp:      return "BMP"
         case .icns:     return "ICNS"
@@ -49,6 +54,7 @@ enum ConversionFormat: String, CaseIterable, Identifiable, Hashable {
         case .tiff:     return "tiff"
         case .gif:      return "gif"
         case .avif:     return "avif"
+        case .webp:     return "webp"
         case .ico:      return "ico"
         case .bmp:      return "bmp"
         case .icns:     return "icns"
@@ -65,6 +71,7 @@ enum ConversionFormat: String, CaseIterable, Identifiable, Hashable {
         case .tiff:     return "public.tiff"
         case .gif:      return "com.compuserve.gif"
         case .avif:     return "public.avif"
+        case .webp:     return "org.webmproject.webp"
         case .ico:      return "com.microsoft.ico"
         case .bmp:      return "com.microsoft.bmp"
         case .icns:     return "com.apple.icns"
@@ -76,7 +83,7 @@ enum ConversionFormat: String, CaseIterable, Identifiable, Hashable {
     /// UI to gray out the slider for lossless targets.
     var isLossy: Bool {
         switch self {
-        case .jpeg, .heic, .avif, .jpeg2000: return true
+        case .jpeg, .heic, .avif, .webp, .jpeg2000: return true
         case .png, .tiff, .gif, .ico, .bmp, .icns: return false
         }
     }
@@ -88,7 +95,7 @@ enum ConversionFormat: String, CaseIterable, Identifiable, Hashable {
     var supportsMultipleFrames: Bool {
         switch self {
         case .gif, .tiff, .png: return true
-        case .jpeg, .heic, .avif, .ico, .bmp, .icns, .jpeg2000: return false
+        case .jpeg, .heic, .avif, .webp, .ico, .bmp, .icns, .jpeg2000: return false
         }
     }
 
@@ -102,6 +109,7 @@ enum ConversionFormat: String, CaseIterable, Identifiable, Hashable {
         case "tif", "tiff":       return .tiff
         case "gif":               return .gif
         case "avif":              return .avif
+        case "webp":              return .webp
         case "ico":               return .ico
         case "bmp":               return .bmp
         case "icns":              return .icns
